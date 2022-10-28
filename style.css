@@ -1,0 +1,16 @@
+:root {
+    --couleur-principale: #D7BFDF;
+    --couleur-principale-clair: #E9DCEA;
+    --couleur-principale-fonce: #A67AA9;
+    --couleur-typo: #23680C;
+    --halloween-p: #FF9A00;
+    --halloween-s: #881EE4;
+    --noel: #B3000C;
+    --typo: #####;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
