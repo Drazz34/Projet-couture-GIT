@@ -14,3 +14,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    background-color: var(--couleur-principale-clair);
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav {}
+
+header nav ul {
+    display: flex;
+    text-decoration: none;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+    align-items: center;
+}
