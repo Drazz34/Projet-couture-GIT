@@ -180,3 +180,42 @@ header button {
 .txt_sophie h3, .txt_john h3 {
     margin-bottom: 32px;
 }
+
+.rea_evenement {
+    background-image: url("images/fond_rea.png");
+    width: 100%;
+    height: 1017px;
+    display: flex;
+    align-items: center;
+}
+
+.rea_semaine {
+    width: 602px;
+    height: 965px;
+    background-color: var(--couleur-principale);
+    border-radius: 25px;
+    text-align: center;
+    color: var(--couleur-typo);
+    padding: 25px;
+    font-size: 2em;
+}
+
+.rea_evenement .rea_semaine h3 {
+    margin: 20px 0;
+}
+
+.rea_evenement .rea_semaine img {
+    margin: 20px 0;
+}
+
+.rea_evenement .rea_semaine p {
+    margin: 20px 0;
+}
+
+.insta_jf {
+    width: 326px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 90px;
+}
