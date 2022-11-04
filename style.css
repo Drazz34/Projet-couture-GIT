@@ -208,7 +208,6 @@ header button {
     color: var(--couleur-typo);
     padding: 25px;
     font-size: 2em;
-    font-weight: ;
 }
 
 .rea_evenement .rea_semaine h3 {
@@ -269,5 +268,114 @@ header button {
 /* fin partie événement réalisation de la semaine */
 
 /* début footer */
+
+.foot {
+    max-width: 1440px;
+    height: 680px;
+    padding-bottom: 30px;
+}
+
+
+.photo_fond {
+    background-image: url(images/banniere_footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40%;
+}
+
+.container {
+    margin-top: 30px;
+    height: 250px;
+}
+
+.reseaux {
+    display: flex;
+    width: 100%;
+}
+
+.details_reseaux {
+    display: flex;
+    justify-content: space-around;
+    width: 815px;
+    height: 257px;
+
+}
+
+.liens_reseaux {
+    padding: 20px;
+    height: 250px;
+}
+
+.logo_gmail {
+    margin-top: 20px;
+}
+
+.parents {
+    padding: 20px;
+    margin-left: 90px;
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    color: #23680C;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.suivre {
+    margin-left: 90px;
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    color: #23680C;
+}
+
+.line_vert {
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 200px;
+    margin: 0 20px;
+}
+
+
+.line_hor {
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    width: 1133px;
+    margin: 0 100px;
+}
+
+.contact_ {
+    width: 200px;
+}
+
+.droits {
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.bouton {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: column;
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+.parents_droit {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.image {
+    width: 50%;
+}
 
 /* fin footer */
