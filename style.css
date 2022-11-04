@@ -102,7 +102,7 @@ header button {
 
 /* fin BANNIERE */
 
-/*  */
+/* début partie Bienvenue */
 
 .bienvenue {
     width: 100%;
@@ -134,6 +134,10 @@ header button {
     width: 50%;
     height: 472px;
 }
+
+/* fin partie bienvenue */
+
+/* début partie fondateurs */
 
 .membres_fondateurs {
     width: 100%;
@@ -181,12 +185,18 @@ header button {
     margin-bottom: 32px;
 }
 
+/* fin partie fondateurs */
+
+/* début partie événement réalisation de la semaine */
+
 .rea_evenement {
     background-image: url("images/fond_rea.png");
     width: 100%;
     height: 1017px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
 }
 
 .rea_semaine {
@@ -198,6 +208,7 @@ header button {
     color: var(--couleur-typo);
     padding: 25px;
     font-size: 2em;
+    font-weight: ;
 }
 
 .rea_evenement .rea_semaine h3 {
@@ -219,3 +230,44 @@ header button {
     justify-content: space-evenly;
     margin: 20px 0 20px 90px;
 }
+
+.evenement_prochain {
+    width: 602px;
+    height: 965px;
+    background-color: var(--couleur-principale);
+    border-radius: 25px;
+    text-align: center;
+    color: var(--couleur-typo);
+    padding: 25px;
+    font-size: 2em;
+}
+
+.evenement_prochain p {
+    margin: 20px 0;
+}
+
+.evenement_prochain p span {
+    text-transform: uppercase;
+}
+
+.evenement_prochain button {
+    text-transform: uppercase;
+    width: 492px;
+    height: 136px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    background-color: var(--couleur-principale-fonce);
+    font-size: 1.5em;
+    margin: 40px 0;
+}
+
+.evenement_prochain img {
+    margin: 40px 0;
+}
+
+/* fin partie événement réalisation de la semaine */
+
+/* début footer */
+
+/* fin footer */
