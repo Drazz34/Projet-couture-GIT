@@ -124,3 +124,13 @@ header button {
     width: 50%;
     height: 472px;
 }
+
+.membres_fondateurs {
+    width: 100%;
+    height: 472px;
+    text-align: center;
+}
+
+.membres_fondateurs_presentation {
+    display: flex;
+}
