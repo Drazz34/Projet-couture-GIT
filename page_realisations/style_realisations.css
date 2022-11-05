@@ -89,3 +89,44 @@ header button {
     margin-left: 15px;
     cursor: pointer;
 }
+/* début code page réalisations */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prem_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--couleur-principale-clair);
+    height: 715px;
+}
+
+.titre_page {
+    align-items: center;
+    border-radius: 15px;
+    width: 789px;
+    height: 120px;
+    background-color: var(--couleur-principale);
+    margin: 30px;
+    box-shadow: 2px 2px 2px rgba(50, 47, 47, 0.957);
+
+}
+
+.titre_page h1 {
+    font-size: 2.7em;
+    align-items: center;
+    text-align: center;
+    color: var(--couleur-typo);
+    margin-top: 20px;
+
+}
+
+.cartes_fondateurs {
+    height: 552px;
+    background-color: var(--couleur-principale-clair);
+    width: 100%;
+}
