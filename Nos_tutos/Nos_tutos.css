@@ -90,14 +90,12 @@ header nav ul li a {
 #mesure{
     background-color: #A67AA9;
     width: 100%;
-    display:flex;
-    flex-direction: column;
     padding-bottom: 30px;
 }
 
-/* #principal{ 
-   
-}*/
+#principal{ 
+    display:flex;
+}
 
 img{
     height: 480px;
@@ -105,18 +103,64 @@ img{
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 60px;
-    margin: 50px;
 }
 
+#tricot_text{
+    height: 480px;
+    width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+#couture_text{
+    height: 480px;
+    width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+#crochet_text{
+    height: 480px;
+    width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+#costume_text{
+    height: 480px;
+    width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+#accessoires_text{
+    height: 480px;
+    width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
 
 
 .bout{
+    padding: 25px;
+    padding-right: 390px;
     border-radius: 35px;
-    background-color: #1c151d;
-    margin: 20px;
+    background-color: red;
+    margin-bottom: -50px;
 }
 
-/* .textes{ */
-
-/* } */
+.textes{
+    height: 300px;
+    width: 500px;
+    background-color: burlywood;
+    border-radius: 21px;
+    text-align: center;
+    padding-top: 30%;
+    margin-top: 100px;
+} 
 
