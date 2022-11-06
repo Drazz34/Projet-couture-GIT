@@ -57,6 +57,12 @@ header nav ul {
 header nav ul li {
     list-style-type: none;
     margin: 0 10px;
+    transition: transform ease-in-out .3s;
+    
+    }
+    
+    body li:hover {
+        transform: scale(1.3);
 }
 
 header nav ul li a {
@@ -89,6 +95,7 @@ header button {
     margin-left: 15px;
     cursor: pointer;
 }
+
 /* début code page réalisations */
 
 main {
@@ -112,7 +119,7 @@ main {
     height: 120px;
     background-color: var(--couleur-principale);
     margin: 30px;
-    box-shadow: 2px 2px 2px rgba(50, 47, 47, 0.957);
+    box-shadow: 5px 4px 2px grey;
 
 }
 
@@ -126,7 +133,336 @@ main {
 }
 
 .cartes_fondateurs {
+    display: flex;
+        justify-content: space-around;
     height: 552px;
     background-color: var(--couleur-principale-clair);
     width: 100%;
+}
+.carte_sophie {
+    display: flex;
+    justify-content: start;
+    width: 655px;
+    height: 457px;
+    background-image: url(image/photo_sophie.png);
+}
+
+.carte_john {
+    display: flex;
+    justify-content: start;
+    width: 655px;
+    height: 457px;
+    background-image: url(image/photo_john.png);
+
+}
+
+.titre_sophie {
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    color: var(--couleur-typo);
+    font-size: 2em;
+    width: 240px;
+    height: 64px;
+    background-color: var(--couleur-principale-clair);
+    border-radius: 15px;
+}
+
+/* types de categories */
+
+
+.types_article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 937px;
+    background-color: var(--couleur-principale);
+    width: 100%;
+}
+
+.types_coutures_titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--couleur-typo);
+    font-size: 1.5em;
+    margin-top: 85px;
+
+    width: 537px;
+    height: 97px;
+    background-color: var(--couleur-principale-clair);
+    border-radius: 15px;
+    box-shadow: 5px 4px 2px grey;
+}
+
+.container_categories {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 640px;
+
+}
+
+.cate {
+    margin-right: 40px;
+    margin-left: 30px;
+    text-align: center;
+    width: 370px;
+    color: var(--couleur-typo);
+    font-size: 1.3em;
+}
+
+.types_article a {
+    outline: none;
+    text-decoration: none;
+}
+
+.types_article a:hover {
+    transition: transform ease-in-out .4s;
+    transform: scale(1.3);
+}
+
+/* fin catégories */
+/* .container_page {
+    display: flex;
+    flex-wrap: wrap;
+    height: 2114px;
+} */
+
+.container_couture {
+    height: 937px;
+    background-color: var(--couleur-principale-clair);
+    width: 100%;
+    padding: 20px 20px 20px 0;
+}
+
+.contain_tricot {
+    height: 750px;
+    background-color: var(--couleur-principale-clair);
+    width: 100%;
+    padding: 20px 20px 20px 0;
+}
+
+
+.contain_crochet {
+    height: 750px;
+    background-color: var(--couleur-principale);
+    width: 100%;
+    padding: 20px 20px 20px 0;
+}
+
+.block_couture {
+    height: 644px;
+}
+
+.categories_titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--couleur-typo);
+    font-size: 1.5em;
+
+    width: 473px;
+    height: 95px;
+
+    background-color: var(--couleur-principale);
+    border-radius: 15px;
+    box-shadow: 5px 4px 2px grey;
+}
+
+.coutures_titre_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 243px;
+    height: 73px;
+    color: var(--couleur-typo);
+    font-size: 1.5em;
+    background-color: var(--couleur-principale);
+    border-radius: 15px;
+    box-shadow: 5px 4px 2px grey;
+    margin-top: 45px;
+
+
+}
+
+.vetements_couture {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: var(--couleur-typo);
+    font-size: 1.5em;
+    width: 100%;
+    margin-top: 110px;
+    height: 460px;
+}
+
+
+
+.pantalons {
+    text-align: center;
+    width: 370px;
+    height: 366px;
+    color: var(--couleur-typo);
+    font-size: 1.3em;
+}
+
+.veste {
+    text-align: center;
+    width: 370px;
+    height: 366px;
+    color: var(--couleur-typo);
+    font-size: 1.3em;
+}
+
+.vetements_bebe {
+    text-align: center;
+    width: 370px;
+    height: 366px;
+    color: var(--couleur-typo);
+    font-size: 1em;
+}
+
+.block_couture a {
+    outline: none;
+    text-decoration: none
+}
+
+.block_couture a:hover {
+    transition: transform ease-in-out .4s;
+    transform: scale(1.1);
+}
+
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.titre_crochet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 243px;
+    height: 73px;
+    color: var(--couleur-typo);
+    font-size: 1.5em;
+    background-color: var(--couleur-principale-clair);
+    border-radius: 15px;
+    box-shadow: 5px 4px 2px grey;
+    margin-top: 45px
+}
+
+/* footer  */
+
+.foot {
+    max-width: 1440px;
+    height: 680px;
+    padding-bottom: 30px;
+}
+
+
+.photo_fond {
+    background-image: url(images/banniere_footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40%;
+}
+
+.container {
+    margin-top: 30px;
+    height: 250px;
+}
+
+.reseaux {
+    display: flex;
+    width: 100%;
+}
+
+.details_reseaux {
+    display: flex;
+    justify-content: space-around;
+    width: 815px;
+    height: 257px;
+
+}
+
+.liens_reseaux {
+    padding: 20px;
+    height: 250px;
+}
+
+.logo_gmail {
+    margin-top: 20px;
+}
+
+.parents {
+    padding: 20px;
+    margin-left: 90px;
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    color: #23680C;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.suivre {
+    margin-left: 90px;
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    color: #23680C;
+}
+
+.line_vert {
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 200px;
+    margin: 0 20px;
+}
+
+
+.line_hor {
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    width: 1133px;
+    margin: 0 100px;
+}
+
+.contact_ {
+    width: 200px;
+}
+
+.droits {
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.bouton {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: column;
+    font-size: 1.4em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+.parents_droit {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.image {
+    width: 50%;
 }
