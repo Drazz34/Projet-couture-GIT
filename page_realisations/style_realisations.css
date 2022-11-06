@@ -10,6 +10,7 @@
     --noel: #B3000C;
     --typo: 'Josefin Sans', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -61,11 +62,12 @@ header nav ul li {
     list-style-type: none;
     margin: 0 10px;
     transition: transform ease-in-out .3s;
-    
-    }
-    
-    body li:hover {
-        transform: scale(1.3);
+}
+
+body li:hover {
+    transform: scale(1.3);
+    background-color: var(--couleur-principale);
+        border-radius: 5px;
 }
 
 header nav ul li a {
@@ -137,11 +139,12 @@ main {
 
 .cartes_fondateurs {
     display: flex;
-        justify-content: space-around;
+    justify-content: space-around;
     height: 552px;
     background-color: var(--couleur-principale-clair);
     width: 100%;
 }
+
 .carte_sophie {
     display: flex;
     justify-content: start;
