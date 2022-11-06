@@ -252,6 +252,20 @@ header button {
     text-align: center;
 }
 
+article img {
+    padding: 30px 0 40px 0;
+}
+
+article h3 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+article p {
+    margin: 50px 30px 30px 30px;
+    font-size: 2.5em;
+}
+
 /* fin section événements passés */
 
 /* début FOOTER */
