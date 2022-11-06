@@ -10,6 +10,9 @@
     --noel: #B3000C;
     --typo: 'Josefin Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -225,12 +228,6 @@ main {
     transform: scale(1.3);
 }
 
-/* fin catégories */
-/* .container_page {
-    display: flex;
-    flex-wrap: wrap;
-    height: 2114px;
-} */
 
 .container_couture {
     height: 937px;
