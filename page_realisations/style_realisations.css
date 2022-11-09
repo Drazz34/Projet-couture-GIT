@@ -62,7 +62,7 @@ header nav ul {
 header nav ul li {
     list-style-type: none;
     margin: 0 10px;
-    transition: transform ease-in-out .3s;
+    transition: transform ease-in-out .5s;
 }
 
 body li:hover {
@@ -145,17 +145,17 @@ main {
 }
 
 .carte_sophie {
-    display: flex;
-    justify-content: start;
+    height: 457px;
     width: 655px;
     background-image: url(image/photo_sophie.png);
+    background-repeat: no-repeat;
 }
 
 .carte_john {
-    display: flex;
-    justify-content: start;
+    height: 457px;
     width: 655px;
     background-image: url(image/photo_john.png);
+    background-repeat: no-repeat;
 }
 
 .titre_sophie {
@@ -182,6 +182,7 @@ main {
     justify-content: center;
     background-color: var(--couleur-principale);
     width: 100%;
+    padding-bottom: 40px;
 }
 
 .types_coutures_titre {
@@ -190,7 +191,8 @@ main {
     justify-content: center;
     color: var(--couleur-typo);
     font-size: 1.5em;
-    margin-top: 85px;
+    margin-top: 50px;
+        margin-bottom: 20px;
 
     width: 537px;
     min-height: 97px;
@@ -222,7 +224,7 @@ main {
 
 .types_article a:hover {
     transition: transform ease-in-out .4s;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 
@@ -240,13 +242,12 @@ main {
 
 
 .contain_crochet {
-        background-color: var(--couleur-principale);
+    background-color: var(--couleur-principale);
     width: 100%;
     padding: 20px 20px 20px 0;
 }
 
-.block_couture {
-}
+.block_couture {}
 
 .categories_titre {
     display: flex;
@@ -269,6 +270,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 243px;
+    min-height: 73px;
     color: var(--couleur-typo);
     font-size: 1.5em;
     background-color: var(--couleur-principale);
@@ -282,11 +284,12 @@ main {
 .vetements_couture {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     color: var(--couleur-typo);
     font-size: 1.5em;
     width: 100%;
-    margin-top: 110px;
+    margin-top: 50px;
 }
 
 
@@ -319,7 +322,7 @@ main {
 
 .block_couture a:hover {
     transition: transform ease-in-out .4s;
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 
@@ -350,8 +353,9 @@ h3 {
 
 
 .photo_fond {
-    background-image: url(images/banniere_footer.png);
+    background-image: url(../images/banniere_footer.png);
     background-repeat: no-repeat;
+    min-height: 291px;
     width: 100%;
 }
 
@@ -445,21 +449,42 @@ h3 {
 .image {
     width: 50%;
 }
-@media screen and (max-width: 1325px) {
+@media screen and (min-width: 220px) and (max-width: 768px) {
     .cartes_fondateurs {
         display: block;
         margin-bottom: 15px;
     }
 
-    .prem_section {}
+                                .carte_john {
+                                    margin-bottom: 5px;
+                                    width: 100%;
+                                }
+                
+                                .carte_sophie {
+                                    margin-bottom: 5px;
+                                    width: 100%;
+                                }
+                
+                                .categories_titre {
+                                    width: 100%;
+                                }
+                
+                                .details_reseaux {
+                                    width: auto;
+                                }
 
-    .line_hor {
+                                .line_vert {
         display: none;
     }
+                .reseaux {
+                    flex-direction: column;
 }
 
-@media screen and (max-width: 674px) {
-    .carte_sophie {
-        width: 80%;
+                                .bouton {
+                                    display: none;
+                                }
+                
+                                .line_hor {
+                                    display: none;
     }
 }
