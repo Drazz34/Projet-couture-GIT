@@ -260,6 +260,7 @@ header button {
     background-color: var(--couleur-principale-fonce);
     font-size: 1.5em;
     margin: 40px 0;
+    cursor: pointer;
 }
 
 .evenement_prochain img {
