@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-
+    <header id="haut">
+        <div ></div>
         <img src="../images/logo.png" alt="Logo de l'association" class="logo_asso">
 
         <nav>
@@ -24,7 +24,7 @@
 
         <div class="btn_profil">
             <button>Se déconnecter</button>
-            <img src="../images/workspace.png" alt="profil">
+            <img src="../images/workspace.png" alt="profil" class="img_workspace">
         </div>
     </header>
 
@@ -106,10 +106,15 @@
             <span class="line_hor"></span>
             <div class="parents_droit">
                 <div class="droits"> &copy; 2022 La Couture Pour La Vie - Tous Droits Réservées</div>
-    
+                
+                <!-- bouton pour remonter la page  -->
                 <div class="bouton">
-                    <img class="image" src="../images/dashicons_arrow-up-alt2.png" alt="">
-                    <p>Haut de page</p>
+                    <img  class="image" src="../images/dashicons_arrow-up-alt2.png" alt="haut" usemap="#Haut">
+
+                    <map name="#Haut">
+                        <area shape="rect" coords="15,10,500,650" href="#haut" alt="jeuxHalo1">
+                    </map>
+                    <p>haut de page</p> 
                 </div>
             </div>
     
