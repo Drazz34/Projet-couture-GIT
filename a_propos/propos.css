@@ -270,8 +270,7 @@ h3 {
 .contient_liste {
   display: flex;
   width: 80%;
-  background-color: #b4aeae;
-  opacity: 80%;
+  height: 250px;
   margin: 0 auto;
 }
 
@@ -279,20 +278,24 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 50px;
   width: 100%;
+  color: white;
   background-color: #b4aeae;
   opacity: 80%;
-  color: white;
 }
 
 .liste_direct ul li {
   margin: 3px;
 }
 .titre_adherents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   font-size: 0.8em;
   color: var(--couleur-typo);
-  max-height: 35px;
+  height: 30px;
   margin: 15px;
   width: 160px;
 }
@@ -300,8 +303,122 @@ h3 {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 10px;
 }
 
+/* formulaire */
+.incone_form {
+  display: flex;
+  justify-content: center;
+  background-color: var(--couleur-principale-clair);
+  box-shadow: 5px 4px 2px grey;
+  border-radius: 15px;
+  width: 15%;
+}
+
+.parent_icon {
+  padding-top: 50px;
+  width: 100%;
+  background-color: var(--couleur-principale);
+}
+.formulaire {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--couleur-principale);
+}
+
+form {
+  width: 1360px;
+  height: 900px;
+  background-color: var(--couleur-principale-fonce);
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: var(--typo);
+  margin-top: 135px;
+}
+
+.taille_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 90px;
+  background-color: var(--couleur-principale-clair);
+  color: var(--couleur-typo);
+  font-family: var(--couleur-typo);
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.form_flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  border-color: transparent;
+  background-color: var(--couleur-principale-clair);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="text"] {
+  width: 822px;
+  height: 90px;
+}
+
+input[type="text"] {
+  color: grey;
+  font-size: 2em;
+  text-align: center;
+  font-family: var(--typo);
+}
+
+#date {
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(../../images/calendrier.png);
+  width: 80px;
+  height: 60px;
+  margin-right: 200px;
+}
+
+.form_top_box {
+  width: 1360px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.placeholder {
+  text-align: center;
+  font-size: 2em;
+  font-family: var(--typo);
+  text-transform: uppercase;
+}
+
+.bouton_box {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#bouton_envoie {
+  width: 320px;
+  height: 90px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--typo);
+  color: var(--halloween-s);
+}
 /* footer  */
 
 /* .foot {
