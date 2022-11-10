@@ -95,6 +95,7 @@ header nav ul li a {
 
 #principal{ 
     display:flex;
+    justify-content: space-evenly;
 }
 
 img{
@@ -148,7 +149,7 @@ img{
 
 .bout{
     padding: 25px;
-    padding-right: 390px;
+    padding-right: 421px;
     border-radius: 35px;
     background-color: red;
     margin-bottom: -50px;
