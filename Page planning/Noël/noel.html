@@ -27,7 +27,8 @@
 
             <img src="images_noel/sapin_noel.png" alt="Un sapin de Noël">
 
-            <p>Venez partager la magie de Noël lors de l’atelier créations de Noël du <span class="nombre">5</span> au <span class="nombre">23</span> décembre <span class="nombre">2022</span> !</p>
+            <p>Venez partager la magie de Noël lors de l’atelier créations de Noël du <span class="nombre">5</span> au
+                <span class="nombre">23</span> décembre <span class="nombre">2022</span> !</p>
 
         </div>
 
@@ -35,29 +36,34 @@
 
             <form action="#" method="post">
 
-                <div>
-                    <label for="prenom">prénom</label>
-                    <input type="text" id="prenom" name="prenom">
+                <div class="form_top_box">
+
+                    <div class="form_prenom form_flex">
+                        <label for="prenom" class="taille_box">prénom</label>
+                        <input type="text" id="prenom" name="prenom">
+                    </div>
+                    <div class="form_nom form_flex">
+                        <label for="nom" class="taille_box">nom</label>
+                        <input type="text" id="nom" name="nom">
+                    </div>
+                    <div class="form_email form_flex">
+                        <label for="email" class="taille_box">e-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form_date form_flex">
+                        <label for="date" class="taille_box">date souhaitée</label>
+                        <input type="date" name="date" id="date" value="2022-12-05"><span></span>
+                    </div>
+
                 </div>
 
-                <div>
-                    <label for="nom">nom</label>
-                    <input type="text" id="nom" name="nom">
-                </div>
+                <div class="bouton_box">
 
-                <div>
-                    <label for="email">e-mail</label>
-                    <input type="email" name="email" id="email">
-                </div>
+                    <div class="bouton">
+                        <label for="bouton_envoie"></label>
+                        <input type="button" value="je m'inscris" id="bouton_envoie">
+                    </div>
 
-                <div>
-                    <label for="date">date souhaitée</label>
-                    <input type="date" name="date" id="date" value="2022-12-05">
-                </div>
-
-                <div>
-                    <label for="bouton_envoie"></label>
-                    <input type="button" value="je m'inscris" id="bouton_envoie">
                 </div>
 
             </form>
