@@ -101,9 +101,8 @@ header nav ul li a {
 img{
     height: 480px;
     width: 480px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 60px;
+    margin-right: 100px;
 }
 
 #tricot_text{
@@ -163,5 +162,6 @@ img{
     text-align: center;
     padding-top: 30%;
     margin-top: 100px;
+    font-size: 
 } 
 
