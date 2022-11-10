@@ -71,3 +71,25 @@ main {
 .texte p .nombre {
     font-family: CurlzMT, var(--typo);
 }
+
+.formulaire {
+    width: 1440px;
+    height: 1044px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 1360px;
+    height: 900px;
+    background-color: white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: var(--typo);
+}
+
+#bouton_envoie {
+    text-transform: uppercase;
+    font-family: var(--typo);
+}
