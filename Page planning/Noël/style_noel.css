@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+    font-family: MerryChristmasFlakes;
+    src: url(fonts/MerryChristmasFlake.ttf) format('truetype');
+}
+@font-face {
+    font-family: CurlzMT;
+    src: url(fonts/CurlzMT.ttf) format('truetype');
+}
+
+:root {
+    --couleur-principale: #D7BFDF;
+    --couleur-principale-clair: #E9DCEA;
+    --couleur-principale-fonce: #A67AA9;
+    --couleur-typo: #23680C;
+    --halloween-p: #FF9A00;
+    --halloween-s: #881EE4;
+    --noel: #B3000C;
+    --typo: 'Josefin Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 1440px;
+    height: 1600px;
+    background-color: var(--noel);
+    margin: auto;
+}
+
+.titre {
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titre a {
+    font-family: var(--typo);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: -80px 0 0 30px;
+}
+
+.titre h1 {
+    font-family: MerryChristmasFlakes, var(--typo);
+    color: white;
+    font-size: 5em;
+    font-weight: normal;
+}
+
+.texte {
+    display: flex;
+    align-items: center;
+    height: 374px;
+}
+
+.texte p {
+    color: white;
+    font-family: MerryChristmasFlakes, var(--typo);
+    font-size: 3.6em;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.texte p .nombre {
+    font-family: CurlzMT, var(--typo);
+}
