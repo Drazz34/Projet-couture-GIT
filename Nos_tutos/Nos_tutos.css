@@ -15,6 +15,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
 }
 body { 
     font-family: var(--typo); 
@@ -101,9 +105,10 @@ header button {
     color: #23680C;
     background-color: #E9DCEA;
     border: solid 2px #ae9db4;
-    padding: 35px;
+    padding: 55px;
     text-align: center;
-    width: 750px;
+    font-size: xx-large;
+    width: 820px;
 }
 
 
@@ -119,70 +124,77 @@ header button {
 }
 
 .image_toto{
-    height: 480px;
-    width: 480px;
+    height: 425px;
+    width: 425px;
     padding-top: 60px;
     margin-right: 100px;
     
 }
 
+/* prend en compte les image */
 #tricot_text{
     height: 480px;
     width: 480px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 60px;
 }
+
 
 #couture_text{
     height: 480px;
     width: 480px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 60px;
 }
+
 
 #crochet_text{
     height: 480px;
     width: 480px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 60px;
 }
+
 
 #costume_text{
     height: 480px;
     width: 480px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 60px;
 }
 
 #accessoires_text{
     height: 480px;
     width: 480px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 60px;
 }
 
 
+
 .bout{
-    padding: 25px;
-    padding-right: 421px;
-    border-radius: 35px;
-    background-color: red;
-    margin-bottom: -50px;
-}
+    border-radius:35px;
+    background-color: #E9DCEA;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    height: 76px;
+    justify-content: center;
+    width: 501px;
+    margin-left: -70px;
+    color: #23680C;
+    font-size: 30px;
+} 
+
 
 .textes{
-    height: 300px;
-    width: 500px;
-    background-color: burlywood;
+    height: 251px;
+    width: 502px;
+    background-color: #E9DCEA;
     border-radius: 21px;
     text-align: center;
-    padding-top: 30%;
-    margin-top: 100px;
+    margin-top: 58px;
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: -70px;
+    color: #23680C;
 } 
 
 
@@ -296,4 +308,13 @@ header button {
 
 .image {
     width: 50%;
+}
+
+.bidul{
+    color: #000;
+   
+}
+
+#haut{
+    scroll-behavior: smooth;
 }
