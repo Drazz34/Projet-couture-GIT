@@ -124,23 +124,17 @@ input[type=text], input[type=email], input[type=date] {
 }
 
 input[type=date] {
-    color: rgb(17, 4, 4);
+    color: white;
     font-size: 2em;
     text-align: center;
     font-family: var(--typo);
 }
 
-/* input[type=date]::-webkit-calendar-picker-indicator {
+input[type=date]::-webkit-calendar-picker-indicator {
     background: url(../../images/calendrier.png);
     width: 80px;
     height: 60px;
     margin-right: 200px;
-} */
-
-@-moz-document url-prefix() {
-    span {
-    background-image: url(../../images/calendrier.png);
-    }
 }
 
 .form_top_box {
@@ -149,4 +143,27 @@ input[type=date] {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.placeholder {
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--typo);
+    text-transform: uppercase;
+}
+
+.bouton_box {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+#bouton_envoie {
+    width: 320px;
+    height: 90px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
 }
