@@ -337,6 +337,7 @@ form {
   text-transform: uppercase;
   font-family: var(--typo);
   margin-top: 135px;
+  margin-bottom: 100px;
 }
 
 .taille_box {
@@ -378,6 +379,7 @@ input[type="text"] {
 }
 
 #date {
+  height: 350px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -417,110 +419,107 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   text-transform: uppercase;
   font-family: var(--typo);
-  color: var(--halloween-s);
+  color: var(--couleur-typo);
+  transition: 0.5s;
 }
+#bouton_envoie:hover {
+  box-shadow: 0 5px 50px white inset, 0 5px 50px 0 white;
+}
+
 /* footer  */
 
-/* .foot {
-    max-width: 1440px;
-    padding-bottom: 30px;
+.foot {
+  max-width: 1440px;
+  padding-bottom: 30px;
 }
 
-
 .photo_fond {
-    background-image: url(../images/banniere_footer.png);
-    background-repeat: no-repeat;
-    min-height: 291px;
-    width: 100%;
+  min-height: 291px;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .container {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .reseaux {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .details_reseaux {
-    display: flex;
-    justify-content: space-around;
-    width: 815px;
-
+  display: flex;
+  justify-content: space-around;
+  width: 815px;
 }
 
 .liens_reseaux {
-    padding: 20px;
+  padding: 20px;
 }
 
 .logo_gmail {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .parents {
-    padding: 20px;
-    margin-left: 90px;
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
-    color: #23680C;
+  padding: 20px;
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
 }
 
 .logo {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .suivre {
-    margin-left: 90px;
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
-    color: #23680C;
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
 }
 
 .line_vert {
-    border-left: 2px solid #000;
-    display: inline-block;
-    margin: 0 20px;
+  border-left: 2px solid #000;
+  display: inline-block;
+  margin: 0 20px;
 }
 
-
 .line_hor {
-    border-bottom: 2px solid #000;
-    display: inline-block;
-    width: 1133px;
-    margin: 0 100px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  width: 1133px;
+  margin: 0 100px;
 }
 
 .contact_ {
-    width: 200px;
+  width: 200px;
 }
 
 .droits {
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
-    width: 100%;
-    text-align: center;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  text-align: center;
 }
 
 .bouton {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    flex-direction: column;
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  flex-direction: column;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .parents_droit {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .image {
-    width: 50%;
-} */
+  width: 50%;
+}
