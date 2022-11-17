@@ -15,21 +15,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
-  font-family: var(--typo);
   max-width: 1440px;
   margin: 0 auto;
+  font-family: var(--typo);
 }
 body li:hover {
   transform: scale(1.3);
   background-color: var(--couleur-principale);
   border-radius: 5px;
 }
+
+/* début HEADER */
 
 header {
   background-color: var(--couleur-principale-clair);
@@ -97,145 +96,128 @@ header button {
   cursor: pointer;
 }
 
-/* ceci est pour le titre */
+/* fin HEADER */
 
-#back {
-  background-color: #d7bfdf;
-  padding: 6%;
+/* début BANNIERE */
+
+.banniere {
+  height: 623px;
+  color: var(--couleur-typo);
+}
+
+.titre_page {
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
   justify-content: center;
-  align-content: flex-start;
-  background-image: url(../images/bannière_tuto.png);
+  align-items: center;
+  font-size: 3em;
 }
 
-.nos {
-  color: #23680c;
-  background-color: #e9dcea;
-  padding: 21px;
-  text-align: center;
-  font-size: 60px;
-  width: 604px;
-  margin-top: -26px;
-  border-radius: 15px;
-}
-
-.nes{
-    padding: 22px;
-    background-color: #A67AA9;
-    color: white;
-    margin-top: 69px;
-    text-align: center;
-    width: 167px;
-    height: 80px;
-    border-radius: 26px;
-    font-size: 33px;
-}
-
-/* corps de liste_tutos */
-
-#corps {
-  background-color: #e9dcea;
-  width: auto;
-  height: auto;
-  padding: 15px;
-  flex-direction: column;
-}
-
-/* ceci est la parti accessoire*/
-
-#video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.vectoor{
-    height: 40px;
-   margin-right: 15px;
-}
-
-.toto{
-    background-color: #A67AA9;
-    height: 60px;
-    width: 143px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 180px;
-    border-radius: 23px;
-    color: aliceblue;
-    position: absolute;
-
-}
-
-.toto:nth-child(1){
-    left: 215px;
-}
-
-.toto:nth-child(3){
-    left: 875px;
-}
-
-#acce{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#accessoire1{
-    background-color: #A67AA9;
-    color: white;
-    width: 183px;
-    height: 80px;
-    border-radius: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#boite_accessoire {
+.banniere_image {
+  background-image: url(images/banniere_paques.png);
+  height: 493px;
   display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
+  align-items: flex-end;
+}
+
+.banniere_titre {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(166, 122, 169, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 600;
+}
+/* fin BANNIERE */
+
+/* début SECTION réalisation des adhérents */
+
+section {
+  width: 1440px;
+  height: 2663px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-typo);
+}
+
+section .titre_realisation {
+  width: 100%;
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.img_acce {
-  width: 300px;
-  height: 300px;
+section .titre_realisation h3 {
+  font-size: 2.5em;
 }
 
-/* ici c'est pour les flêches  */
-
-.fleche {
-  width: 150px;
-  height: 150px;
-  transform: rotate(-90deg);
+section .real_box1 {
+  width: 100%;
+  height: 770px;
+  display: flex;
 }
 
-.fleche1 {
-  width: 150px;
-  height: 150px;
-  transform: rotate(90deg);
+section .real_box1 .real_josephine, section .real_box1 .real_gustave {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-/* ceci est le footer */
+section .real_box1 .real_josephine p, section .real_box1 .real_gustave p {
+  font-size: 2em;
+}
+
+section .real_box2 {
+  width: 100%;
+  height: 1780px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .real_box2 p {
+  font-size: 2em;
+}
+
+section .real_box2 .real_micheline {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section .real_box2 .real_yassine {
+  width: 100%;
+  height: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* fin SECTION réalisation des adhérents */
+
+/* début FOOTER */
 
 .foot {
   max-width: 1440px;
   height: 680px;
-  border: solid black 2px;
   padding-bottom: 30px;
 }
 
 .photo_fond {
-  background-image: url(../images/banniere_footer.png);
+  background-image: url(../../images/banniere_footer.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 40%;
@@ -330,10 +312,4 @@ header button {
   width: 50%;
 }
 
-.bidul {
-  color: #000;
-}
-
-#haut {
-  scroll-behavior: smooth;
-}
+/* fin FOOTER */
