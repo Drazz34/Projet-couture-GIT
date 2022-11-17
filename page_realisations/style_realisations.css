@@ -62,12 +62,11 @@ header nav ul {
 header nav ul li {
   list-style-type: none;
   margin: 0 10px;
-  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.2s;
 }
 
 body li:hover {
   transform: scale(1.3);
-  background-color: var(--couleur-principale);
   border-radius: 5px;
 }
 
@@ -216,11 +215,12 @@ main {
 .types_article a {
   outline: none;
   text-decoration: none;
+  transition: transform ease-in-out 0.2s;
 }
 
 .types_article a:hover {
-  transition: transform ease-in-out 0.5s;
-  transform: scale(1.2);
+  transition: transform ease-in-out 0.2s;
+  transform: scale(1.1);
 }
 
 .container_couture {
@@ -306,11 +306,12 @@ main {
 .block_couture a {
   outline: none;
   text-decoration: none;
+  transition: transform ease-in-out 0.2s;
 }
 
 .block_couture a:hover {
-  transition: transform ease-in-out 0.5s;
-  transform: scale(1.3);
+  transition: transform ease-in-out 0.3s;
+  transform: scale(1.2);
 }
 
 h3 {
