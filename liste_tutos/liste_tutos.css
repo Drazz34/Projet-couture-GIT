@@ -122,16 +122,16 @@ header button {
   border-radius: 15px;
 }
 
-.nes {
-  padding: 4px;
-  background-color: #a67aa9;
-  color: white;
-  margin-top: 69px;
-  text-align: center;
-  width: 167px;
-  height: 43px;
-  border-radius: 35px;
-  font-size: 35px;
+.nes{
+    padding: 22px;
+    background-color: #A67AA9;
+    color: white;
+    margin-top: 69px;
+    text-align: center;
+    width: 167px;
+    height: 80px;
+    border-radius: 26px;
+    font-size: 33px;
 }
 
 /* corps de liste_tutos */
@@ -146,22 +146,57 @@ header button {
 
 /* ceci est la parti accessoire*/
 
-#acce {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-#accessoire1 {
-  background-color: #a67aa9;
-  color: white;
-  text-align: center;
-  width: 183px;
-  height: 38px;
-  border-radius: 35px;
-  font-size: 35px;
+.vectoor{
+    height: 40px;
+   margin-right: 15px;
+}
+
+.toto{
+    background-color: #A67AA9;
+    height: 60px;
+    width: 143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    border-radius: 23px;
+    color: aliceblue;
+    position: absolute;
+
+}
+
+.toto:nth-child(1){
+    left: 215px;
+}
+
+.toto:nth-child(3){
+    left: 875px;
+}
+
+#acce{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accessoire1{
+    background-color: #A67AA9;
+    color: white;
+    width: 183px;
+    height: 80px;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #boite_accessoire {

@@ -428,7 +428,7 @@ h3 {
 }
 
 .image {
-  width: 50%;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 220px) and (max-width: 768px) {
