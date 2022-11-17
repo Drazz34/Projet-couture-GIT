@@ -28,6 +28,10 @@ body li:hover {
   border-radius: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* début HEADER */
 
 header {
@@ -309,7 +313,7 @@ section .real_box2 .real_yassine {
 }
 
 .image {
-  width: 50%;
+  cursor: pointer;
 }
 
 /* fin FOOTER */
