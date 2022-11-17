@@ -1,93 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-    --couleur-principale: #D7BFDF;
-    --couleur-principale-clair: #E9DCEA;
-    --couleur-principale-fonce: #A67AA9;
-    --couleur-typo: #23680C;
-    --halloween-p: #FF9A00;
-    --halloween-s: #881EE4;
-    --noel: #B3000C;
-    --typo: 'Josefin Sans', sans-serif;
+  --couleur-principale: #d7bfdf;
+  --couleur-principale-clair: #e9dcea;
+  --couleur-principale-fonce: #a67aa9;
+  --couleur-typo: #23680c;
+  --halloween-p: #ff9a00;
+  --halloween-s: #881ee4;
+  --noel: #b3000c;
+  --typo: "Josefin Sans", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--typo);
-    max-width: 1440px;
-    margin: 0 auto;
+  font-family: var(--typo);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body li:hover {
+  transform: scale(1.3);
+  background-color: var(--couleur-principale);
+  border-radius: 5px;
 }
 
 /* début HEADER */
 
 header {
-    background-color: var(--couleur-principale-clair);
-    display: flex;
-    height: 100px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo_asso {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 header nav {
-    width: 700px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  width: 700px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul {
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    align-items: baseline;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 header nav ul li {
-    list-style-type: none;
-    margin: 0 10px;
+  list-style-type: none;
+  margin: 0 10px;
+  transition: transform ease-in-out 0.5s;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: var(--couleur-typo);
-    font-size: 1.5em;
+  text-decoration: none;
+  color: var(--couleur-typo);
+  font-size: 1.5em;
 }
 
 .lien_accueil {
-    font-weight: bold;
-    font-size: 2.5em;
+  font-weight: bold;
+  font-size: 2.5em;
 }
 
 .btn_profil {
-    display: flex;
+  display: flex;
 }
 
 header button {
-    font-family: var(--typo);
-    color: #FFF;
-    background-color: var(--couleur-principale-fonce);
-    cursor: pointer;
-    padding: 15px;
-    border: none;
-    border-radius: 25px;
-    font-size: 1.5em;
+  font-family: var(--typo);
+  color: #fff;
+  background-color: var(--couleur-principale-fonce);
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5em;
 }
 
 .img_workspace {
-    margin-left: 15px;
-    cursor: pointer;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 /* fin HEADER */
@@ -95,25 +101,24 @@ header button {
 /* début BANNIERE */
 
 .banniere {
-    width: 100%;
-    height: 658px;
-    background-image: url("images_planning/banniere_planning.jpg");
-    background-size: cover;
-    position: relative;
-    
+  width: 100%;
+  height: 658px;
+  background-image: url("images_planning/banniere_planning.jpg");
+  background-size: cover;
+  position: relative;
 }
 
 .banniere_text {
-    position: absolute;
-    width: 100%;
-    height: 120px;
-    background-color: rgba(35, 104, 12, 0.3);
-    bottom: 0;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 4em;
-    text-align: center;
-    padding-top: 35px;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(35, 104, 12, 0.3);
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 35px;
 }
 
 /* fin BANNIERE */
@@ -121,8 +126,8 @@ header button {
 /* début emploi du temps */
 
 .emploi_du_temps {
-    width: 100%;
-    height: 445px;
+  width: 100%;
+  height: 445px;
 }
 
 /* fin emploi du temps */
@@ -130,26 +135,26 @@ header button {
 /* début section description */
 
 .description {
-    width: 100%;
-    height: 1055px;
-    text-align: center;
-    background-image: url("images_planning/association.png");
+  width: 100%;
+  height: 1055px;
+  text-align: center;
+  background-image: url("images_planning/association.png");
 }
 
 .description h1 {
-    color: var(--couleur-typo);
-    font-size: 3em;
-    padding: 40px 0 20px 0;
+  color: var(--couleur-typo);
+  font-size: 3em;
+  padding: 40px 0 20px 0;
 }
 
 .description h3 {
-    font-size: 1.8em;
-    padding: 20px;
+  font-size: 1.8em;
+  padding: 20px;
 }
 
 .description p {
-    font-size: 1.6em;
-    padding: 0 20px;
+  font-size: 1.6em;
+  padding: 0 20px;
 }
 
 /* fin section inscription */
@@ -157,66 +162,67 @@ header button {
 /* début section prochains événements */
 
 .prochains_evenements {
-    width: 100%;
-    height: 956px;
-    background-color: var(--couleur-principale);
-    color: var(--couleur-typo);
+  width: 100%;
+  height: 956px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-typo);
 }
 
 .prochains_evenements_titre {
-    width: 100%;
-    height: 130px;
-    background-color: var(--couleur-principale-clair);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
+  width: 100%;
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
 }
 
 .evenements_speciaux {
-    width: 100%;
-    height: 826px;
-    text-align: center;
-    font-size: 2em;
+  width: 100%;
+  height: 826px;
+  text-align: center;
+  font-size: 2em;
 }
 .evenements_speciaux h1 {
-    height: 92px;
-    padding-top: 80px;
+  height: 92px;
+  padding-top: 80px;
 }
 
 .evenements_speciaux_cartes {
-    height: 734px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 734px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.halloween, .noel {
-    width: 411px;
-    height: 506px;
-    background-color: var(--couleur-principale-fonce);
-    color: white;
+.halloween,
+.noel {
+  width: 411px;
+  height: 506px;
+  background-color: var(--couleur-principale-fonce);
+  color: white;
 }
 
 .evenements_speciaux_cartes h3 {
-    text-transform: uppercase;
-    padding: 40px;
+  text-transform: uppercase;
+  padding: 40px;
 }
 
 .evenements_speciaux_cartes img {
-    padding: 25px;
+  padding: 25px;
 }
 
 .evenements_speciaux_cartes button {
-    width: 310px;
-    height: 63px;
-    border: none;
-    background-color: var(--couleur-principale-clair);
-    color: var(--couleur-typo);
-    font-family: var(--typo);
-    font-size: 1em;
-    border-radius: 25px;
-    cursor: pointer;
+  width: 310px;
+  height: 63px;
+  border: none;
+  background-color: var(--couleur-principale-clair);
+  color: var(--couleur-typo);
+  font-family: var(--typo);
+  font-size: 1em;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 /* fin section prochains événements */
@@ -224,46 +230,46 @@ header button {
 /* début section événements passés */
 
 .evenements_passes {
-    height: 1242px;
-    background-color: var(--couleur-principale);
-    color: var(--couleur-typo);
+  height: 1242px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-typo);
 }
 
 .evenements_passes_titre {
-    height: 130px;
-    background-color: var(--couleur-principale-clair);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
 }
 
 .evenements_passes_articles {
-    height: 1112px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 1112px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .evenements_passes_articles article {
-    width: 374px;
-    height: 990px;
-    background-color: var(--couleur-principale-clair);
-    text-align: center;
+  width: 374px;
+  height: 990px;
+  background-color: var(--couleur-principale-clair);
+  text-align: center;
 }
 
 article img {
-    padding: 30px 0 40px 0;
+  padding: 30px 0 40px 0;
 }
 
 article h3 {
-    font-size: 2.5em;
-    text-transform: uppercase;
+  font-size: 2.5em;
+  text-transform: uppercase;
 }
 
 article p {
-    margin: 50px 30px 30px 30px;
-    font-size: 2.5em;
+  margin: 50px 30px 30px 30px;
+  font-size: 2.5em;
 }
 
 /* fin section événements passés */
@@ -271,112 +277,105 @@ article p {
 /* début FOOTER */
 
 .foot {
-    max-width: 1440px;
-    height: 680px;
-    padding-bottom: 30px;
+  max-width: 1440px;
+  height: 680px;
+  padding-bottom: 30px;
 }
 
-
 .photo_fond {
-    background-image: url(../images/banniere_footer.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 40%;
+  background-image: url(../images/banniere_footer.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40%;
 }
 
 .container {
-    margin-top: 30px;
-    height: 250px;
+  margin-top: 30px;
+  height: 250px;
 }
 
 .reseaux {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .details_reseaux {
-    display: flex;
-    justify-content: space-around;
-    width: 815px;
-    height: 257px;
-
+  display: flex;
+  justify-content: space-around;
+  width: 815px;
+  height: 257px;
 }
 
 .liens_reseaux {
-    padding: 20px;
-    height: 250px;
+  padding: 20px;
+  height: 250px;
 }
 
 .logo_gmail {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .parents {
-    padding: 20px;
-    margin-left: 90px;
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
-    color: #23680C;
+  padding: 20px;
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
 }
 
 .logo {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .suivre {
-    margin-left: 90px;
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
-    color: #23680C;
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
 }
 
 .line_vert {
-    border-left: 2px solid #000;
-    display: inline-block;
-    height: 200px;
-    margin: 0 20px;
+  border-left: 2px solid #000;
+  display: inline-block;
+  height: 200px;
+  margin: 0 20px;
 }
 
-
 .line_hor {
-    border-bottom: 2px solid #000;
-    display: inline-block;
-    width: 1133px;
-    margin: 0 100px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  width: 1133px;
+  margin: 0 100px;
 }
 
 .contact_ {
-    width: 200px;
+  width: 200px;
 }
 
 .droits {
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
-    width: 100%;
-    text-align: center;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  text-align: center;
 }
 
 .bouton {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    flex-direction: column;
-    font-size: 1.4em;
-    font-family: 'Josefin Sans',
-        sans-serif;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  flex-direction: column;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .parents_droit {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .image {
-    width: 50%;
+  width: 50%;
 }
 
 /* fin FOOTER */

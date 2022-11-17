@@ -219,7 +219,7 @@ main {
 }
 
 .types_article a:hover {
-  transition: transform ease-in-out 0.4s;
+  transition: transform ease-in-out 0.5s;
   transform: scale(1.2);
 }
 
@@ -309,7 +309,7 @@ main {
 }
 
 .block_couture a:hover {
-  transition: transform ease-in-out 0.4s;
+  transition: transform ease-in-out 0.5s;
   transform: scale(1.3);
 }
 

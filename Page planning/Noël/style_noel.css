@@ -24,6 +24,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body li:hover {
+  transform: scale(1.3);
+  background-color: var(--couleur-principale);
+  border-radius: 5px;
+}
 
 main {
   width: 1440px;
