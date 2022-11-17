@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--typo);
   max-width: 1440px;
@@ -375,7 +379,7 @@ article p {
 }
 
 .image {
-  width: 50%;
+  cursor: pointer;
 }
 
 /* fin FOOTER */

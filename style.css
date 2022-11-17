@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--typo);
   max-width: 1440px;
@@ -270,6 +274,11 @@ header button {
   cursor: pointer;
 }
 
+.evenement_prochain button a {
+  text-decoration: none;
+  color: white;
+}
+
 .evenement_prochain img {
   margin: 40px 0;
 }
@@ -377,7 +386,7 @@ header button {
 }
 
 .image {
-  width: 50%;
+  cursor: pointer;
 }
 
 /* fin FOOTER */
