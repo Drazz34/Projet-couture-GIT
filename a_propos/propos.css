@@ -127,7 +127,7 @@ header button {
   border-radius: 15px;
   box-shadow: 5px 4px 2px grey;
 }
-.photo_fond {
+.photo_fond_main {
   width: 100%;
   background-image: url(images/fond_page_a_propos.png);
 }
@@ -420,21 +420,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 0 5px 50px white inset, 0 5px 50px 0 white;
 }
 
-/* footer  */
-
 .foot {
   max-width: 1440px;
+  height: 680px;
   padding-bottom: 30px;
 }
 
 .photo_fond {
-  min-height: 291px;
+  background-image: url(../images/banniere_footer.png);
+  background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 30px;
+  height: 40%;
 }
 
 .container {
   margin-top: 30px;
+  height: 250px;
 }
 
 .reseaux {
@@ -446,10 +447,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: space-around;
   width: 815px;
+  height: 257px;
 }
 
 .liens_reseaux {
   padding: 20px;
+  height: 250px;
 }
 
 .logo_gmail {
@@ -478,6 +481,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .line_vert {
   border-left: 2px solid #000;
   display: inline-block;
+  height: 200px;
   margin: 0 20px;
 }
 
