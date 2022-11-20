@@ -190,3 +190,83 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 0 5px 50px var(--halloween-s) inset,
     0 5px 50px 0 var(--halloween-p);
 }
+
+/* Début Responsive */
+
+@media screen and (min-width: 220px) and (max-width: 768px) {
+  main {
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    display: none;
+  }
+
+  .retour a {
+    margin-left: 25px;
+  }
+
+  .formulaire {
+    width: auto;
+    height: auto;
+    background-color: var(--halloween-s);
+  }
+
+  .formulaire form {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .formulaire form .form_top_box .form_flex {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .formulaire form, .form_top_box {
+    width: auto;
+    height: auto;
+  }
+
+  .formulaire form .form_flex label {
+    margin-bottom: 5px;
+    width: 150px;
+    font-size: 1em;
+    height: 60px;
+  }
+
+  .formulaire form .form_flex input {
+    width: 300px;
+    font-size: 1em;
+  }
+
+  .halloween {
+    height: auto;
+  }
+
+  .halloween .texte {
+    font-size: 0.5em;
+    height: auto;
+  }
+
+  .halloween .texte p {
+    margin: 20px 0;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+  }
+
+  .formulaire form .bouton_box .bouton {
+    margin-top: 40px;
+  }
+
+  .formulaire form .bouton_box .bouton #bouton_envoie {
+    font-size: 1em;
+    width: 185px;
+    height: 50px;
+  }
+
+}
+
+/* Fin Responsive */

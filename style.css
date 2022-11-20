@@ -400,9 +400,30 @@ input, label {
 
 /* début RESPONSIVE */
 
-@media screen and (min-width: 769px) and (max-width: 1066px) {
+@media screen and (min-width: 769px) and (max-width: 1085px) {
   header nav, header .btn_profil button {
     font-size: 0.6em;
+  }
+
+  .rea_evenement .rea_semaine, .rea_evenement .evenement_prochain {
+    width: 360px;
+  }
+
+  .rea_evenement .rea_semaine .img_rea_semaine {
+    width: 330px;
+  }
+
+  .rea_evenement .rea_semaine .insta_jf {
+    margin: 20px 0;
+  }
+
+  .rea_evenement .evenement_prochain button {
+    width: 290px;
+    height: 100px;
+    font-size: 1em;
+  }
+  .rea_evenement .evenement_prochain img {
+    width: 300px;
   }
 }
 
@@ -470,8 +491,7 @@ input, label {
     transition: all 0.3s ease-in;
     height: 225px;
     display: block;
-    }
-
+  }
 
   /* fin nav bar */
 
@@ -535,6 +555,22 @@ input, label {
     width: 330px;
   }
 
+  .rea_evenement .rea_semaine .insta_jf {
+    margin: 20px 0;
+  }
+
+  .rea_evenement .evenement_prochain button {
+    width: 290px;
+    height: 100px;
+    font-size: 1em;
+  }
+
+  .rea_evenement .evenement_prochain img {
+    width: 300px;
+  }
+
+  /* Début responsive Footer */
+
   .details_reseaux {
     width: auto;
   }
@@ -547,8 +583,8 @@ input, label {
     flex-direction: column;
   }
 
-  .bouton {
-    display: none;
+  .parents {
+    margin-top: -107px;
   }
 
   .line_hor {
@@ -558,4 +594,7 @@ input, label {
   .droits {
     margin-top: -20px;
   }
+
+  /* Fin responsive Footer */
+  
 }
