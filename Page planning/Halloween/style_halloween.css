@@ -210,7 +210,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .formulaire {
     width: auto;
     height: auto;
-    padding-bottom: 25px;
+    background-color: var(--halloween-s);
   }
 
   .formulaire form {
