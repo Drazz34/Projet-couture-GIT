@@ -191,6 +191,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     0 5px 50px 0 var(--halloween-p);
 }
 
+/* Début Responsive */
+
 @media screen and (min-width: 220px) and (max-width: 768px) {
   main {
     width: auto;
@@ -266,3 +268,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
 }
+
+/* Fin Responsive */
