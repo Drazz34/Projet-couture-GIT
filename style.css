@@ -491,8 +491,7 @@ input, label {
     transition: all 0.3s ease-in;
     height: 225px;
     display: block;
-    }
-
+  }
 
   /* fin nav bar */
 
@@ -570,6 +569,8 @@ input, label {
     width: 300px;
   }
 
+  /* Début responsive Footer */
+
   .details_reseaux {
     width: auto;
   }
@@ -593,4 +594,7 @@ input, label {
   .droits {
     margin-top: -20px;
   }
+
+  /* Fin responsive Footer */
+  
 }
