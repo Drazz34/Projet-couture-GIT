@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+    --couleur-principale: #d7bfdf;
+    --couleur-principale-clair: #e9dcea;
+    --couleur-principale-fonce: #a67aa9;
+    --couleur-typo: #23680c;
+    --halloween-p: #ff9a00;
+    --halloween-s: #881ee4;
+    --noel: #b3000c;
+    --typo: "Josefin Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--typo);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body li:hover {
+    transform: scale(1.3);
+    background-color: var(--couleur-principale);
+    border-radius: 5px;
+}
+
+
+header {
+    background-color: var(--couleur-principale-clair);
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_asso {
+    width: 100px;
+    height: 100px;
+}
+
+header nav {
+    width: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin: 0 10px;
+    transition: transform ease-in-out 0.5s;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--couleur-typo);
+    font-size: 1.5em;
+}
+
+.lien_accueil {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.btn_profil {
+    display: flex;
+}
+
+header button {
+    font-family: var(--typo);
+    color: #fff;
+    background-color: var(--couleur-principale-fonce);
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5em;
+}
+
+.img_workspace {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* ceci est le header*/
+
+
+/* corps de liste_tutos */
+
+#corps {
+    background-color: #e9dcea;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+}
+
+/*ceci est le titre*/
+#back {
+    background-color: #d7bfdf;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: flex-start;
+    background-image: url(../images/bannière_tuto.png);
+}
+
+.nos {
+    color: #23680c;
+    background-color: #e9dcea;
+    padding: 21px;
+    text-align: center;
+    font-size: 37px;
+    width: 261px;
+    margin-top: -26px;
+    border-radius: 10px;
+}
+
+.nes {
+    padding: 25px;
+    background-color: #A67AA9;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    width: 171px;
+    height: 80px;
+    border-radius: 34px;
+    font-size: 33px;
+}
+
+/*boite accessoire*/
+
+
+#boite_accessoire {
+    flex-direction: column;
+    padding: 25px;
+}
+
+.img_acce2 {
+    width: 500px;
+    height: 432px;
+    margin-top: -32px;
+}
+
+/*parti ratacher a accessoire */
+
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.toto {
+    background-color: #A67AA9;
+    height: 68px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -111px;
+    border-radius: 23px;
+    color: aliceblue;
+    position: absolute;
+    margin-top: -444px;
+}
+
+
+/*la section mega mastok */
+
+#mastok_1 {
+    padding: 5%;
+    font-size: 35px;
+    display: block;
+    width: 1000px;
+    height: 796px;
+    /* background-color: #b3000c; */
+    margin-top: 75px;
+}
+
+#mastok_2 {
+    margin-top: 55px;
+    padding: 5%;
+    font-size: 35px;
+    display: block;
+    width: 499px;
+    height: 993px;
+    background-color: #D7BFDF;
+    margin-bottom: 55px;
+}
+
+#megamastok {
+    display: flex;
+    background-color: #e9dcea;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #23680c;
+}
+
+
+/* ici les fleche et img_acce*/
+
+#result{
+    font-size: 25px;
+    background-color: #A67AA9;
+    height: 104px;
+    width: 262px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.fleche {
+    width: 70px;
+    height: 79.53999999999999px;
+    transform: rotate(0deg);
+}
+
+.fleche1 {
+    width: 70px;
+    height: 79.53999999999999px;
+    transform: rotate(180deg);
+}
+
+.img_acce {
+    width: 277px;
+    height: 149px;
+    margin: 25px;
+}
+
+/*ici c'est pour la liste*/
+
+#coteA {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+}
+
+#liste {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-left: 34px;
+}
+
+
+#liste_t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A67AA9;
+    height: 80px;
+    width: 200px;
+    color: white;
+}
+
+#corps_l {
+    height: 318px;
+    width: 200px;
+    background-color: #D7BFDF;
+    padding: 30px;
+    color: #23680c;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*ceci est pour les etapes*/
+#etape {
+    display: flex;
+    height: 77px;
+    width: 476px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+
+.etape2 {
+    height: 84px;
+    width: 127px;
+    background-color: #A67AA9;
+    display: flex;
+    margin-left: 45px;
+    padding: 43px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    font-size: 63%;
+    align-items: center;
+}
+
+/*ceci et la parti resulta des membre*/
+#boite_accessoire22 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/* ceci est le footer */
+
+
+
+
+
+.foot {
+    max-width: 1440px;
+    height: 680px;
+    border: solid black 2px;
+    padding-bottom: 30px;
+}
+
+.photo_fond {
+    background-image: url(../images/banniere_footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40%;
+}
+
+.container {
+    margin-top: 30px;
+    height: 250px;
+}
+
+.reseaux {
+    display: flex;
+    width: 100%;
+}
+
+.details_reseaux {
+    display: flex;
+    justify-content: space-around;
+    width: 815px;
+    height: 257px;
+}
+
+.liens_reseaux {
+    padding: 20px;
+    height: 250px;
+}
+
+.logo_gmail {
+    margin-top: 20px;
+}
+
+.parents {
+    padding: 20px;
+    margin-left: 90px;
+    font-size: 1.4em;
+    font-family: "Josefin Sans", sans-serif;
+    color: #23680c;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.suivre {
+    margin-left: 90px;
+    font-size: 1.4em;
+    font-family: "Josefin Sans", sans-serif;
+    color: #23680c;
+}
+
+.line_vert {
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 200px;
+    margin: 0 20px;
+}
+
+.line_hor {
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    width: 1133px;
+    margin: 0 100px;
+}
+
+.contact_ {
+    width: 200px;
+}
+
+.droits {
+    font-size: 1.4em;
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.bouton {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: column;
+    font-size: 1.4em;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.parents_droit {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.image {
+    width: 50%;
+}
+
+.bidul {
+    color: #000;
+}
+
+#haut {
+    scroll-behavior: smooth;
+}
