@@ -94,6 +94,10 @@ header button {
   font-size: 1.5em;
 }
 
+.boutton_hover:hover {
+  background-color: rgb(150, 100, 130);
+}
+
 .img_workspace {
   margin-left: 15px;
   cursor: pointer;
