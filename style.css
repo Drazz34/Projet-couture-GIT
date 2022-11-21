@@ -49,7 +49,7 @@ header {
 }
 
 header nav {
-  width: 700px;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -130,10 +130,6 @@ header button {
   color: var(--couleur-typo);
   padding: 15px;
   background-color: var(--couleur-principale-clair);
-}
-.bienvenue .bienvenue_texte h1 {
-  margin-bottom: 15px;
-  margin-top: -15px;
 }
 
 .bienvenue .bienvenue_texte p {
@@ -390,3 +386,215 @@ header button {
 }
 
 /* fin FOOTER */
+
+svg {
+  display: none;
+  color: #000;
+  width: 24px;
+  height: 28px;
+}
+
+input, label {
+  display: none;
+}
+
+/* début RESPONSIVE */
+
+@media screen and (min-width: 769px) and (max-width: 1085px) {
+  header nav, header .btn_profil button {
+    font-size: 0.6em;
+  }
+
+  .rea_evenement .rea_semaine, .rea_evenement .evenement_prochain {
+    width: 360px;
+  }
+
+  .rea_evenement .rea_semaine .img_rea_semaine {
+    width: 330px;
+  }
+
+  .rea_evenement .rea_semaine .insta_jf {
+    margin: 20px 0;
+  }
+
+  .rea_evenement .evenement_prochain button {
+    width: 290px;
+    height: 100px;
+    font-size: 1em;
+  }
+  .rea_evenement .evenement_prochain img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 220px) and (max-width: 768px) {
+
+  /* début nav bar */
+
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header nav ul, header .btn_profil button {
+    display: none;
+  }
+
+  header nav ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: var(--couleur-principale-fonce);
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 22px;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-weight: normal;
+  }
+
+  header nav ul li a.lien_accueil {
+    font-weight: normal;
+  }
+
+  header nav ul li {
+    padding: 8px 0;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+    transition: none;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  header .logo_asso {
+    border-radius: 50%; 
+  }
+
+  header svg, header label {
+    display: block;
+  }
+
+  input:checked ~ ul {
+    /* display: flex; */
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    height: 225px;
+    display: block;
+  }
+
+  /* fin nav bar */
+
+  .banniere_accueil {
+    display: none;
+  }
+
+  .img_bobine {
+    display: none;
+  }
+
+  .bienvenue_texte {
+    width: 100%;
+    height: auto;
+  }
+
+  .bienvenue_texte h1 {
+    margin-top: 25px;
+  }
+
+  .membres_fondateurs {
+    display: grid;
+    height: auto;
+  }
+
+  .membres_fondateurs_presentation {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .vertical_line {
+    transform: rotate(90deg);
+    height: 135px;
+  }
+
+  .txt_sophie {
+    margin: 20px 0;
+  }
+
+  .txt_john p {
+    margin-bottom: 20px;
+  }
+
+  .txt_sophie h3, .txt_john h3 {
+    margin-bottom: 25px;
+  }
+
+  .rea_evenement {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rea_evenement .rea_semaine, .rea_evenement .evenement_prochain {
+    height: auto;
+    width: 365px;
+    margin: 20px 0;
+  }
+
+  .rea_evenement .rea_semaine .img_rea_semaine {
+    width: 330px;
+  }
+
+  .rea_evenement .rea_semaine .insta_jf {
+    margin: 20px 0;
+  }
+
+  .rea_evenement .evenement_prochain button {
+    width: 290px;
+    height: 100px;
+    font-size: 1em;
+  }
+
+  .rea_evenement .evenement_prochain img {
+    width: 300px;
+  }
+
+  /* Début responsive Footer */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: -20px;
+  }
+
+  /* Fin responsive Footer */
+  
+}
