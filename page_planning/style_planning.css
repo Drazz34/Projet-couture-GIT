@@ -131,9 +131,56 @@ header button {
 
 /* début emploi du temps */
 
-.emploi_du_temps {
+/* .emploi_du_temps {
   width: 100%;
   height: 445px;
+} */
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  height: 445px;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+.thead_th {
+  width: 200px;
+  height: 50px;
+}
+
+tbody th {
+  width: 100px;
+  height: 100px;
+}
+
+tbody tr td {
+  height: 50px;
+}
+
+.tricot_crochet {
+  width: 100px;
+  background-color: #EAD1DC;
+}
+
+.dix_huit {
+  height: 50px;
+}
+
+.couture {
+  background-color: #D9D2EA;
+}
+
+.atelier {
+  background-color: #CFE2F3;
+}
+
+tfoot {
+  height: 50px;
 }
 
 /* fin emploi du temps */
@@ -488,6 +535,10 @@ input, label {
   .emploi_du_temps {
     height: 400px;
   }
+  
+  table {
+    font-size: 0.7em;
+  }
 
   section.description {
     height: auto;
@@ -533,6 +584,10 @@ input, label {
     padding-top: 15px;
   }
 
+  .evenements_passes {
+    background-color: #fff;
+  }
+
   .evenements_passes .evenements_passes_titre {
     height: 90px;
     font-size: 1em;
@@ -552,19 +607,31 @@ input, label {
   .evenements_passes .evenements_passes_articles .carnaval,
   .evenements_passes .evenements_passes_articles .paques,
   .evenements_passes .evenements_passes_articles .ete {
-    width: 315px;
+    width: 90%;
+    display: flex;
+    font-size: 0.3em;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .evenements_passes .evenements_passes_articles .art_ev_passe {
+    padding-top: 50px;
   }
 
   .evenements_passes .evenements_passes_articles .carnaval img {
-    width: 310px;
+    width: 200px;
+    height: 300px;
+    padding-left: 10px;
   }
 
   .evenements_passes .evenements_passes_articles .paques img {
-    width: 310px;
+    width: 200px;
+    padding-left: 10px;
   }
 
   .evenements_passes .evenements_passes_articles .ete img {
-    width: 310px;
+    width: 200px;
+    padding-left: 10px;
   }
 
   /* Début responsive Footer */
@@ -575,6 +642,14 @@ input, label {
 
   .line_vert {
     display: none;
+  }
+
+  .photo_fond {
+    display: none;
+  }
+
+  .foot {
+    height: auto;
   }
 
   .reseaux {

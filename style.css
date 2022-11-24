@@ -589,6 +589,14 @@ input, label {
     display: none;
   }
 
+  .photo_fond {
+    display: none;
+  }
+
+  .foot {
+    height: auto;
+  }
+
   .reseaux {
     flex-direction: column;
   }
