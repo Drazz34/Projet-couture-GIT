@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,26 +9,37 @@
   </head>
 
   <body>
-    <header id="haut">
-      <img
-        src="../images/logo.png"
-        alt="Logo de l'association"
-        class="logo_asso"/>
+     <header id="haut"> 
+      
+        <label class="hidden" for="hidden">
 
-      <nav>
-        <ul>
-          <li><a href="../index.html" class="lien_accueil">Accueil</a></li>
-          <li><a href="../Page planning/planning.html">Planning</a></li>
-          <li><a href="../page_realisations/realisations.html">Réalisations</a></li>
-          <li><a href="../Nos_tutos/Nos_tutos.html">Tutoriels</a></li>
-          <li><a href="propos.html">À propos</a></li>
-        </ul>
-      </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+      
+          </label>
 
-      <div class="btn_profil">
-        <button>Se déconnecter</button>
-        <img src="../images/workspace.png" alt="profil" class="img_workspace" />
-      </div>
+        <nav>
+
+            <input type="checkbox" name="hidden" id="hidden">
+
+            <img src="../images/logo.png" alt="Logo de l'association" class="logo_asso">
+
+            <ul>
+                <li><a href="../index.html" class="lien_accueil">Accueil</a></li>
+                <li><a href="../Page_planning/planning.html">Planning</a></li>
+                <li><a href="../page_realisations/realisations.html">Réalisations</a></li>
+                <li><a href="../Nos_tutos/Nos_tutos.html">Tutoriels</a></li>
+                <li><a href="../a_propos/propos.html">À propos</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn_profil">
+            <button>Se déconnecter</button>
+            <img src="../images/workspace.png" alt="profil" class="img_workspace">
+        </div>
+
     </header>
     <!-- fin header -->
 
@@ -183,8 +194,8 @@
               />
             </div>
             <div class="form_date form_flex">
-              <label for="text" class="taille_box">Commentaire</label>
-              <input type="text" name="date" id="date" placeholder="Commentaire" />
+              <label for="date" class="taille_box" id="date_text">Commentaire</label>
+              <input type="text" name="date_text" id="date" placeholder="Commentaire" />
             </div>
           </div>
 
@@ -199,59 +210,44 @@
     </main>
 
     <!-- footer -->
-    <footer class="foot">
-      <div class="photo_fond"></div>
-      <div class="container">
-        <div class="reseaux">
-          <div class="liens_reseaux">
-            <p class="suivre">Nous suivre :</p>
+   <footer class="foot">
 
-            <div class="details_reseaux">
-              <a class="logo" href="">
-                <img src="../images/twitter.png" alt=""
-              /></a>
-              <a class="logo" href=""
-                ><img src="../images/facebook.png" alt=""
-              /></a>
-              <a class="logo" href="">
-                <img src="../images/insta.png" alt=""
-              /></a>
+        <div class="photo_fond">
+
+        </div>
+
+        <div class="container">
+            <div class="reseaux">
+                <div class="liens_reseaux">
+
+                    <p class="suivre">Nous suivre : </p>
+
+
+                    <div class="details_reseaux">
+                        <a class="logo" href=""> <img src="../images/twitter.png" alt=""></a>
+                        <a class="logo" href=""><img src="../images/facebook.png" alt=""></a>
+                        <a class="logo" href=""> <img src="../images/insta.png" alt=""></a>
+                    </div>
+
+                </div>
+                <span class="line_vert"></span>
+                <div class="parents">
+                    <p class="contact_">Nous contacter : </p>
+                    <a class=lien href=""> <img class="logo_gmail" src="../images/gmail.png" alt=""></a>
+                </div>
+
             </div>
-          </div>
-          <span class="line_vert"></span>
-          <div class="parents">
-            <p class="contact_">Nous contacter :</p>
-            <a class="lien" href="">
-              <img class="logo_gmail" src="../images/gmail.png" alt=""
-            /></a>
-          </div>
         </div>
-      </div>
-      <span class="line_hor"></span>
-      <div class="parents_droit">
-        <div class="droits">
-          &copy; 2022 La Couture Pour La Vie - Tous Droits Réservées
+        <span class="line_hor"></span>
+        <div class="parents_droit">
+            <div class="droits"> &copy; 2022 La Couture Pour La Vie - Tous Droits Réservées</div>
+
+            <div class="bouton">
+                <a href="#haut"><img class="image" src="../images/dashicons_arrow-up-alt2.png" alt="Flèche retour">
+                <p>Haut de page</p></a>
+            </div>
         </div>
 
-        <div class="bouton">
-          <img
-            class="image"
-            src="../images/dashicons_arrow-up-alt2.png"
-            alt="haut"
-            usemap="#Haut"
-          />
-
-          <map name="#Haut">
-            <area
-              shape="rect"
-              coords="15,10,500,650"
-              href="#haut"
-              alt="jeuxHalo1"
-            />
-          </map>
-          <p>haut de page</p>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

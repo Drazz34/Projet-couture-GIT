@@ -48,6 +48,8 @@ header nav {
   height: 100%;
   display: flex;
   align-items: center;
+  width: 70%;
+  justify-content: space-between;
 }
 
 header nav ul {
@@ -110,8 +112,10 @@ header button {
   border-radius: 15px;
   width: 369px;
   height: 369px;
-  margin: 30px;
-  margin-top: 60px;
+  margin-left: 62px;
+  margin-top: 101px;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url(../page_realisations/image/couture.png);
 }
 
@@ -127,8 +131,7 @@ header button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 679px;
-  height: 145px;
+  padding: 50px 200px 40px;
   border-radius: 15px;
   background-color: var(--couleur-principale);
   font-weight: bold;
@@ -146,7 +149,7 @@ header button {
   text-align: center;
   color: var(--couleur-typo);
   font-size: 2.5em;
-  width: 825px;
+  width: 80%;
   height: 213px;
   background-color: var(--couleur-principale-clair);
   border-radius: 15px;
@@ -219,7 +222,14 @@ header button {
   height: 40%;
 }
 
+.container {
+  margin-top: 30px;
+  height: 250px;
+}
+
 .reseaux {
+  padding: 20px;
+
   display: flex;
   width: 100%;
 }
@@ -232,8 +242,8 @@ header button {
 }
 
 .liens_reseaux {
-  padding: 20px;
   height: 250px;
+  width: 100%;
 }
 
 .logo_gmail {
@@ -241,8 +251,6 @@ header button {
 }
 
 .parents {
-  padding: 20px;
-  margin-left: 90px;
   font-size: 1.4em;
   font-family: "Josefin Sans", sans-serif;
   color: #23680c;
@@ -263,13 +271,13 @@ header button {
   border-left: 2px solid #000;
   display: inline-block;
   height: 200px;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .line_hor {
   border-bottom: 2px solid #000;
   display: inline-block;
-  width: 1133px;
+  width: 90%;
   margin: 0 100px;
 }
 
@@ -304,6 +312,174 @@ header button {
 }
 
 @media screen and (min-width: 220px) and (max-width: 768px) {
+}
 
+svg {
+  display: none;
+  color: #000;
+  width: 24px;
+  height: 28px;
+}
 
+.hidden,
+#hidden {
+  display: none;
+}
+
+/* Début du Responsive */
+
+@media screen and (min-width: 769px) and (max-width: 1085px) {
+  header nav,
+  header .btn_profil button {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 220px) and (max-width: 880px) {
+  /* début nav bar */
+
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header nav ul,
+  header .btn_profil button {
+    display: none;
+  }
+
+  header nav ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: var(--couleur-principale-fonce);
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 22px;
+    z-index: 10;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-weight: normal;
+  }
+
+  header nav ul li a.lien_accueil {
+    font-weight: normal;
+  }
+
+  header nav ul li {
+    padding: 8px 0;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+    transition: none;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  header .logo_asso {
+    border-radius: 50%;
+  }
+
+  .hidden,
+  svg {
+    display: block;
+  }
+
+  input:checked ~ ul {
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    height: 225px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .tout_images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .texte_presentation p {
+    font-size: 1.6em;
+  }
+  .texte_presentation h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .texte_presentation p {
+    font-size: 1em;
+    margin: 0 auto;
+  }
+.photo_fond{
+  display: none;
+}
+.foot{
+  height: auto;
+}
+  .texte_presentation h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .robe_image {
+    padding: 5px;
+    margin: 0;
+    margin-top: 15px;
+    background-position: center;
+    margin-left: 15px;
+  }
+
+  .robe {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+/* footer
+ */
+
+@media screen and (max-width: 1040px) {
+  /* footer responsive */
+
+  /* footer début */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+    margin-left: 80px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: 30px;
+  }
+
+  /* Fin responsive Footer */
 }
