@@ -17,19 +17,19 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: var(--typo);
   max-width: 1440px;
   margin: 0 auto;
+  font-family: var(--typo);
 }
 body li:hover {
   transform: scale(1.3);
   border-radius: 5px;
   background-color: rgba(215, 191, 223, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* début HEADER */
@@ -49,6 +49,7 @@ header {
 }
 
 header nav {
+
   width: 70%;
   height: 100%;
   display: flex;
@@ -96,10 +97,6 @@ header button {
   font-size: 1.5em;
 }
 
-.boutton_hover:hover {
-  background-color: rgb(150, 100, 130);
-}
-
 .img_workspace {
   margin-left: 15px;
   cursor: pointer;
@@ -109,182 +106,115 @@ header button {
 
 /* début BANNIERE */
 
-.banniere_accueil {
-  background-image: url(images/banniere_accueil.png);
-  width: 100%;
-  height: 477px;
+.banniere {
+  height: 623px;
+  color: var(--couleur-typo);
 }
 
+.titre_page {
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+.banniere_image {
+  background-image: url(images/banniere_paques.png);
+  height: 493px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.banniere_titre {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(166, 122, 169, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 600;
+}
 /* fin BANNIERE */
 
-/* début partie Bienvenue */
+/* début SECTION réalisation des adhérents */
 
-.bienvenue {
+section {
+  width: 1440px;
+  height: 2663px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-typo);
+}
+
+section .titre_realisation {
   width: 100%;
-  height: 472px;
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .titre_realisation h3 {
+  font-size: 2.5em;
+}
+
+section .real_box1 {
+  width: 100%;
+  height: 770px;
   display: flex;
 }
 
-.bienvenue_texte {
+section .real_box1 .real_josephine,
+section .real_box1 .real_gustave {
   width: 50%;
-  height: 472px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  color: var(--couleur-typo);
-  padding: 15px;
-  background-color: var(--couleur-principale-clair);
-}
-
-.bienvenue .bienvenue_texte p {
-  font-size: 1.5em;
-}
-
-.img_bobine {
-  width: 50%;
-  height: 472px;
-}
-
-/* fin partie bienvenue */
-
-/* début partie fondateurs */
-
-.membres_fondateurs {
-  width: 100%;
-  height: 472px;
-  text-align: center;
-  background-image: -webkit-linear-gradient(100deg, #e9dcea 50%, #a67aa9 50%);
-}
-
-.membres_fondateurs_titre {
-  height: 80px;
-  display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  color: white;
-  font-size: 1.8em;
 }
 
-.membres_fondateurs_presentation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: calc(472px - 80px);
-}
-
-.membres_fondateurs_presentation img {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.vertical_line {
-  border-left: 1px solid black;
-  display: inline-block;
-  height: 300px;
-}
-
-.txt_sophie,
-.txt_john {
-  z-index: 1;
+section .real_box1 .real_josephine p,
+section .real_box1 .real_gustave p {
   font-size: 2em;
-  width: 350px;
 }
 
-.txt_sophie h3,
-.txt_john h3 {
-  margin-bottom: 32px;
-}
-
-/* fin partie fondateurs */
-
-/* début partie événement réalisation de la semaine */
-
-.rea_evenement {
-  background-image: url("images/fond_rea.png");
+section .real_box2 {
   width: 100%;
-  height: 1017px;
+  height: 1780px;
   display: flex;
+  flex-direction: column;
+}
+
+section .real_box2 p {
+  font-size: 2em;
+}
+
+section .real_box2 .real_micheline {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  font-weight: 600;
 }
 
-.rea_semaine {
-  width: 602px;
-  height: 965px;
-  background-color: var(--couleur-principale);
-  border-radius: 25px;
-  text-align: center;
-  color: var(--couleur-typo);
-  padding: 25px;
-  font-size: 2em;
-}
-
-.rea_evenement .rea_semaine h3 {
-  margin: 20px 0;
-}
-
-.rea_evenement .rea_semaine img {
-  margin: 20px 0;
-}
-
-.rea_evenement .rea_semaine p {
-  margin: 20px 0;
-}
-
-.insta_jf {
-  width: 326px;
+section .real_box2 .real_yassine {
+  width: 100%;
+  height: 880px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 20px 0 20px 90px;
 }
 
-.evenement_prochain {
-  width: 602px;
-  height: 965px;
-  background-color: var(--couleur-principale);
-  border-radius: 25px;
-  text-align: center;
-  color: var(--couleur-typo);
-  padding: 25px;
-  font-size: 2em;
-}
-
-.evenement_prochain p {
-  margin: 20px 0;
-}
-
-.evenement_prochain p span {
-  text-transform: uppercase;
-}
-
-.evenement_prochain button {
-  text-transform: uppercase;
-  width: 492px;
-  height: 136px;
-  border-radius: 25px;
-  color: white;
-  border: none;
-  background-color: var(--couleur-principale-fonce);
-  font-size: 1.5em;
-  margin: 40px 0;
-  cursor: pointer;
-}
-
-.evenement_prochain button a {
-  text-decoration: none;
-  color: white;
-}
-
-.evenement_prochain img {
-  margin: 40px 0;
-}
-
-/* fin partie événement réalisation de la semaine */
+/* fin SECTION réalisation des adhérents */
 
 /* début FOOTER */
 
@@ -295,7 +225,7 @@ header button {
 }
 
 .photo_fond {
-  background-image: url(images/banniere_footer.png);
+  background-image: url(../../images/banniere_footer.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 40%;
@@ -404,32 +334,11 @@ input, label {
   display: none;
 }
 
-/* début RESPONSIVE */
+/* Début du Responsive */
 
 @media screen and (min-width: 769px) and (max-width: 1085px) {
   header nav, header .btn_profil button {
     font-size: 0.6em;
-  }
-
-  .rea_evenement .rea_semaine, .rea_evenement .evenement_prochain {
-    width: 360px;
-  }
-
-  .rea_evenement .rea_semaine .img_rea_semaine {
-    width: 330px;
-  }
-
-  .rea_evenement .rea_semaine .insta_jf {
-    margin: 20px 0;
-  }
-
-  .rea_evenement .evenement_prochain button {
-    width: 290px;
-    height: 100px;
-    font-size: 1em;
-  }
-  .rea_evenement .evenement_prochain img {
-    width: 300px;
   }
 }
 
@@ -459,6 +368,7 @@ input, label {
     transition: all 0.3s ease-in-out;
     display: block;
     margin-left: 22px;
+    z-index: 10;
   }
 
   header nav ul li a {
@@ -492,7 +402,6 @@ input, label {
   }
 
   input:checked ~ ul {
-    /* display: flex; */
     flex-direction: column;
     transition: all 0.3s ease-in;
     height: 225px;
@@ -501,82 +410,77 @@ input, label {
 
   /* fin nav bar */
 
-  .banniere_accueil {
-    display: none;
+  .titre_page {
+    font-size: 1.5em;
+    height: 75px;
   }
 
-  .img_bobine {
-    display: none;
-  }
-
-  .bienvenue_texte {
-    width: 100%;
+  .banniere {
     height: auto;
   }
 
-  .bienvenue_texte h1 {
-    margin-top: 25px;
+  .banniere_image {
+    height: 250px;
+    background-position: left;
   }
 
-  .membres_fondateurs {
-    display: grid;
+  .banniere_titre {
+    font-size: 1.5em;
+    height: 70px;
+  }
+
+  section {
+    width: auto;
     height: auto;
   }
 
-  .membres_fondateurs_presentation {
+  section .titre_realisation {
+    height: 75px;
+  }
+
+  section .titre_realisation h3 {
+    font-size: 1.2em;
+  }
+
+  section .real_box1 {
     flex-direction: column;
     height: auto;
-    margin: 20px 0;
   }
 
-  .vertical_line {
-    transform: rotate(90deg);
-    height: 135px;
+  section .real_box1 .real_josephine, section .real_box1 .real_gustave {
+    width: auto;
+  }
+  
+  section .real_box1 img {
+    width: 340px;
+    padding: 10px 0;
   }
 
-  .txt_sophie {
-    margin: 20px 0;
-  }
-
-  .txt_john p {
-    margin-bottom: 20px;
-  }
-
-  .txt_sophie h3, .txt_john h3 {
-    margin-bottom: 25px;
-  }
-
-  .rea_evenement {
-    flex-direction: column;
+  section .real_box2 {
     height: auto;
-    background: url(images/fond_rea.png) rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
   }
 
-  .rea_evenement .rea_semaine, .rea_evenement .evenement_prochain {
+  section .real_box2 .real_micheline, section .real_box2 .real_yassine {
     height: auto;
-    width: 365px;
-    margin: 20px 0;
-    background-color: transparent;
-    color: #fff;
   }
 
-  .rea_evenement .rea_semaine .img_rea_semaine {
-    width: 330px;
+  section .real_box2 .real_micheline img {
+    height: 260px;
+    padding: 10px 0;
   }
 
-  .rea_evenement .rea_semaine .insta_jf {
-    margin: 20px 0;
+  section .real_box2 .real_yassine img {
+    height: 185px;
+    padding: 10px 0;
   }
 
-  .rea_evenement .evenement_prochain button {
-    width: 290px;
-    height: 100px;
-    font-size: 1em;
+  section .real_box1 .real_josephine p, section .real_box1 .real_gustave p,
+  section .real_box2 .real_micheline p, section .real_box2 .real_yassine p {
+    font-size: 1.2em;
   }
 
-  .rea_evenement .evenement_prochain img {
-    width: 300px;
+  section .real_box2 .real_yassine p {
+    padding-bottom: 10px;
   }
 
   /* Début responsive Footer */
@@ -614,5 +518,6 @@ input, label {
   }
 
   /* Fin responsive Footer */
-  
+
 }
+/* Fin du Responsive */

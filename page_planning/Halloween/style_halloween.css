@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: ScaryHalloweenFont;
+  src: url(fonts/ScaryHalloweenFont.ttf) format("truetype");
+}
+
+:root {
+  --couleur-principale: #d7bfdf;
+  --couleur-principale-clair: #e9dcea;
+  --couleur-principale-fonce: #a67aa9;
+  --couleur-typo: #23680c;
+  --halloween-p: #ff9a00;
+  --halloween-s: #881ee4;
+  --noel: #b3000c;
+  --typo: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body li:hover {
+  transform: scale(1.3);
+  background-color: var(--couleur-principale);
+  border-radius: 5px;
+}
+
+main {
+  width: 1440px;
+  height: 1600px;
+  background-color: var(--halloween-p);
+  margin: auto;
+}
+
+.halloween {
+  width: 100%;
+  height: 395px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-family: ScaryHalloweenFont;
+  color: var(--halloween-s);
+}
+
+.retour {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.retour_lien {
+  font-family: var(--typo);
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 70px;
+}
+
+.citrouille {
+  width: 276px;
+  height: 286px;
+}
+
+.texte {
+  width: 750px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texte h1 {
+  font-size: 3em;
+}
+
+.texte p {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.sorciere {
+  width: 344px;
+  height: 250px;
+}
+
+/* Début formulaire */
+
+.formulaire {
+  width: 1440px;
+  height: 1044px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 1360px;
+  height: 900px;
+  background-color: var(--halloween-s);
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: var(--typo);
+  margin-top: 135px;
+}
+
+.taille_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 90px;
+  background-color: var(--halloween-p);
+  color: var(--halloween-s);
+  font-family: var(--typo);
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.form_flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  border-color: transparent;
+  background-color: var(--halloween-p);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 822px;
+  height: 90px;
+}
+
+input[type="date"] {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-family: var(--typo);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(../../images/calendrier.png);
+  width: 80px;
+  height: 60px;
+  margin-right: 200px;
+}
+
+.form_top_box {
+  width: 1360px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.placeholder {
+  text-align: center;
+  font-size: 2em;
+  font-family: var(--typo);
+  text-transform: uppercase;
+}
+
+.bouton_box {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#bouton_envoie {
+  width: 320px;
+  height: 90px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--typo);
+  color: var(--halloween-s);
+  transition: 0.5s;
+}
+
+#bouton_envoie:hover {
+  box-shadow: 0 5px 50px var(--halloween-s) inset,
+    0 5px 50px 0 var(--halloween-p);
+}
+
+/* Début Responsive */
+
+@media screen and (min-width: 220px) and (max-width: 768px) {
+  main {
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    display: none;
+  }
+
+  .retour a {
+    margin-left: 25px;
+  }
+
+  .formulaire {
+    width: auto;
+    height: auto;
+    background-color: var(--halloween-s);
+  }
+
+  .formulaire form {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .formulaire form .form_top_box .form_flex {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .formulaire form, .form_top_box {
+    width: auto;
+    height: auto;
+  }
+
+  .formulaire form .form_flex label {
+    margin-bottom: 5px;
+    width: 150px;
+    font-size: 1em;
+    height: 60px;
+  }
+
+  .formulaire form .form_flex input {
+    width: 300px;
+    font-size: 1em;
+  }
+
+  .halloween {
+    height: auto;
+  }
+
+  .halloween .texte {
+    font-size: 0.5em;
+    height: auto;
+  }
+
+  .halloween .texte p {
+    margin: 20px 0;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+  }
+
+  .formulaire form .bouton_box .bouton {
+    margin-top: 40px;
+  }
+
+  .formulaire form .bouton_box .bouton #bouton_envoie {
+    font-size: 1em;
+    width: 185px;
+    height: 50px;
+  }
+
+}
+
+/* Fin Responsive */

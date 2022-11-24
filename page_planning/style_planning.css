@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --couleur-principale: #d7bfdf;
+  --couleur-principale-clair: #e9dcea;
+  --couleur-principale-fonce: #a67aa9;
+  --couleur-typo: #23680c;
+  --halloween-p: #ff9a00;
+  --halloween-s: #881ee4;
+  --noel: #b3000c;
+  --typo: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--typo);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body li:hover {
+  transform: scale(1.3);
+  border-radius: 5px;
+    background-color: rgba(215, 191, 223, 0.4);
+
+}
+
+/* début HEADER */
+
+header {
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo_asso {
+  width: 100px;
+  height: 100px;
+}
+
+header nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  text-decoration: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  transition: transform ease-in-out 0.2s;
+  padding: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--couleur-typo);
+  font-size: 1.5em;
+}
+
+.lien_accueil {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.btn_profil {
+  display: flex;
+}
+
+header button {
+  font-family: var(--typo);
+  color: #fff;
+  background-color: var(--couleur-principale-fonce);
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5em;
+}
+
+.img_workspace {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* fin HEADER */
+
+/* début BANNIERE */
+
+.banniere {
+  width: 100%;
+  height: 658px;
+  background-image: url("images_planning/banniere_planning.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.banniere_text {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(35, 104, 12, 0.3);
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 35px;
+}
+
+/* fin BANNIERE */
+
+/* début emploi du temps */
+
+/* .emploi_du_temps {
+  width: 100%;
+  height: 445px;
+} */
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  height: 445px;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+.thead_th {
+  width: 200px;
+  height: 50px;
+}
+
+tbody th {
+  width: 100px;
+  height: 100px;
+}
+
+tbody tr td {
+  height: 50px;
+}
+
+.tricot_crochet {
+  width: 100px;
+  background-color: #EAD1DC;
+}
+
+.dix_huit {
+  height: 50px;
+}
+
+.couture {
+  background-color: #D9D2EA;
+}
+
+.atelier {
+  background-color: #CFE2F3;
+}
+
+tfoot {
+  height: 50px;
+}
+
+/* fin emploi du temps */
+
+/* début section description */
+
+.description {
+  width: 100%;
+  height: 1055px;
+  text-align: center;
+  background-image: url("images_planning/association.png");
+}
+
+.description h1 {
+  color: var(--couleur-typo);
+  font-size: 3em;
+  padding: 40px 0 20px 0;
+}
+
+.description h3 {
+  font-size: 1.8em;
+  padding: 20px;
+}
+
+.description p {
+  font-size: 1.6em;
+  padding: 0 20px;
+}
+
+/* fin section inscription */
+
+/* début section prochains événements */
+
+.prochains_evenements {
+  width: 100%;
+  height: 956px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-typo);
+}
+
+.prochains_evenements_titre {
+  width: 100%;
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.evenements_speciaux {
+  width: 100%;
+  height: 826px;
+  text-align: center;
+  font-size: 2em;
+}
+.evenements_speciaux h1 {
+  height: 92px;
+  padding-top: 80px;
+}
+
+.evenements_speciaux_cartes {
+  height: 734px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.halloween,
+.noel {
+  width: 411px;
+  height: 506px;
+  background-color: var(--couleur-principale-fonce);
+  color: white;
+}
+
+.evenements_speciaux_cartes h3 {
+  text-transform: uppercase;
+  padding: 40px;
+}
+
+.evenements_speciaux_cartes img {
+  padding: 25px;
+}
+
+.evenements_speciaux_cartes button {
+  width: 310px;
+  height: 63px;
+  border: none;
+  background-color: var(--couleur-principale-clair);
+  color: var(--couleur-typo);
+  font-family: var(--typo);
+  font-size: 1em;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* fin section prochains événements */
+
+/* début section événements passés */
+
+.evenements_passes {
+  height: 1242px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-typo);
+}
+
+.evenements_passes_titre {
+  height: 130px;
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.evenements_passes_articles {
+  height: 1112px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.evenements_passes_articles article {
+  width: 374px;
+  height: 990px;
+  background-color: var(--couleur-principale-clair);
+  text-align: center;
+}
+
+article img {
+  padding: 30px 0 40px 0;
+}
+
+article h3 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+article p {
+  margin: 50px 30px 30px 30px;
+  font-size: 2.5em;
+}
+
+/* fin section événements passés */
+
+/* début FOOTER */
+
+.foot {
+  max-width: 1440px;
+  height: 680px;
+  padding-bottom: 30px;
+}
+
+.photo_fond {
+  background-image: url(../images/banniere_footer.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40%;
+}
+
+.container {
+  margin-top: 30px;
+  height: 250px;
+}
+
+.reseaux {
+  display: flex;
+  width: 100%;
+}
+
+.details_reseaux {
+  display: flex;
+  justify-content: space-around;
+  width: 815px;
+  height: 257px;
+}
+
+.liens_reseaux {
+  padding: 20px;
+  height: 250px;
+}
+
+.logo_gmail {
+  margin-top: 20px;
+}
+
+.parents {
+  padding: 20px;
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.suivre {
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
+}
+
+.line_vert {
+  border-left: 2px solid #000;
+  display: inline-block;
+  height: 200px;
+  margin: 0 20px;
+}
+
+.line_hor {
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  width: 1133px;
+  margin: 0 100px;
+}
+
+.contact_ {
+  width: 200px;
+}
+
+.droits {
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.bouton {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  flex-direction: column;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.parents_droit {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.image {
+  cursor: pointer;
+}
+
+/* fin FOOTER */
+
+svg {
+  display: none;
+  color: #000;
+  width: 24px;
+  height: 28px;
+  cursor: pointer;
+}
+
+input, label {
+  display: none;
+}
+
+/* Début du Responsive */
+
+@media screen and (min-width: 769px) and (max-width: 1085px) {
+  header nav, header .btn_profil button {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* début nav bar */
+
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header nav ul, header .btn_profil button {
+    display: none;
+  }
+
+  header nav ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: var(--couleur-principale-fonce);
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 22px;
+    z-index: 10;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-weight: normal;
+  }
+
+  header nav ul li a.lien_accueil {
+    font-weight: normal;
+  }
+
+  header nav ul li {
+    padding: 8px 0;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+    transition: none;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  header .logo_asso {
+    border-radius: 50%; 
+  }
+
+  header svg, header label {
+    display: block;
+  }
+
+  input:checked ~ ul {
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    height: 225px;
+    display: block;
+  }
+
+  /* fin nav bar */
+  
+  .banniere {
+    background-position: center;
+    height: 250px;
+  }
+
+  .banniere .banniere_text {
+    height: 70px;
+    font-size: 2em;
+    padding-top: 22px;
+  }
+
+  .emploi_du_temps {
+    height: 400px;
+  }
+  
+  table {
+    font-size: 0.7em;
+  }
+
+  section.description {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  
+  section.description h1 {
+    font-size: 1.5em;
+  }
+
+  section.description h3 {
+    font-size: 1.2em;
+  }
+
+  section.description p {
+    font-size: 1em;
+  }
+
+  .prochains_evenements .prochains_evenements_titre h1, .prochains_evenements .evenements_speciaux h1 {
+    font-size: 0.7em;
+  }
+
+  .evenements_speciaux .evenements_speciaux_cartes {
+    flex-direction: column;
+  }
+
+  .prochains_evenements .prochains_evenements_titre {
+    height: 100px;
+  }
+
+  .prochains_evenements, .evenements_speciaux, .evenements_speciaux_cartes {
+    height: auto;
+  }
+
+  .prochains_evenements .evenements_speciaux .evenements_speciaux_cartes .halloween,
+  .prochains_evenements .evenements_speciaux .evenements_speciaux_cartes .noel {
+    margin-bottom: 15px;
+    width: 315px;
+    height: 468px;
+  }
+
+  .prochains_evenements .evenements_speciaux h1 {
+    padding-top: 15px;
+  }
+
+  .evenements_passes {
+    background-color: #fff;
+  }
+
+  .evenements_passes .evenements_passes_titre {
+    height: 90px;
+    font-size: 1em;
+  }
+
+  .evenements_passes .evenements_passes_articles {
+    flex-direction: column;
+  }
+
+  .evenements_passes, .evenements_passes .evenements_passes_articles,
+  .evenements_passes .evenements_passes_articles .carnaval,
+  .evenements_passes .evenements_passes_articles .paques,
+  .evenements_passes .evenements_passes_articles .ete {
+    height: auto;
+  }
+
+  .evenements_passes .evenements_passes_articles .carnaval,
+  .evenements_passes .evenements_passes_articles .paques,
+  .evenements_passes .evenements_passes_articles .ete {
+    width: 90%;
+    display: flex;
+    font-size: 0.3em;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .evenements_passes .evenements_passes_articles .art_ev_passe {
+    padding-top: 50px;
+  }
+
+  .evenements_passes .evenements_passes_articles .carnaval img {
+    width: 200px;
+    height: 300px;
+    padding-left: 10px;
+  }
+
+  .evenements_passes .evenements_passes_articles .paques img {
+    width: 200px;
+    padding-left: 10px;
+  }
+
+  .evenements_passes .evenements_passes_articles .ete img {
+    width: 200px;
+    padding-left: 10px;
+  }
+
+  /* Début responsive Footer */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .photo_fond {
+    display: none;
+  }
+
+  .foot {
+    height: auto;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: -20px;
+  }
+
+  /* Fin responsive Footer */
+
+}
+/* Fin du Responsive */

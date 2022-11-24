@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: MerryChristmasFlakes;
+  src: url(fonts/MerryChristmasFlake.ttf) format("truetype");
+}
+@font-face {
+  font-family: CurlzMT;
+  src: url(fonts/CurlzMT.ttf) format("truetype");
+}
+
+:root {
+  --couleur-principale: #d7bfdf;
+  --couleur-principale-clair: #e9dcea;
+  --couleur-principale-fonce: #a67aa9;
+  --couleur-typo: #23680c;
+  --halloween-p: #ff9a00;
+  --halloween-s: #881ee4;
+  --noel: #b3000c;
+  --typo: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body li:hover {
+  transform: scale(1.3);
+  background-color: var(--couleur-principale);
+  border-radius: 5px;
+}
+
+main {
+  width: 1440px;
+  height: 1600px;
+  background-color: var(--noel);
+  margin: auto;
+}
+
+.titre {
+  height: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titre a {
+  font-family: var(--typo);
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: -80px 0 0 30px;
+}
+
+.titre h1 {
+  font-family: MerryChristmasFlakes, var(--typo);
+  color: white;
+  font-size: 5em;
+  font-weight: normal;
+}
+
+.texte {
+  display: flex;
+  align-items: center;
+  height: 374px;
+}
+
+.texte p {
+  color: white;
+  font-family: MerryChristmasFlakes, var(--typo);
+  font-size: 3.6em;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.texte p .nombre {
+  font-family: CurlzMT, var(--typo);
+}
+
+.formulaire {
+  width: 1440px;
+  height: 1044px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 1360px;
+  height: 900px;
+  background-color: white;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: var(--typo);
+}
+
+#bouton_envoie {
+  text-transform: uppercase;
+  font-family: var(--typo);
+}
+
+.taille_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 90px;
+  background-color: var(--noel);
+  color: white;
+  font-family: var(--typo);
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.form_flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  border-color: transparent;
+  background-color: var(--noel);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 822px;
+  height: 90px;
+}
+
+input[type="date"] {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-family: var(--typo);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(../../images/calendrier.png);
+  width: 80px;
+  height: 60px;
+  margin-right: 200px;
+}
+
+.form_top_box {
+  width: 1360px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.placeholder {
+  text-align: center;
+  font-size: 2em;
+  font-family: var(--typo);
+  text-transform: uppercase;
+}
+
+.bouton_box {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#bouton_envoie {
+  width: 320px;
+  height: 90px;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#bouton_envoie:hover {
+  box-shadow: 0 5px 50px white inset, 0 5px 50px 0 white;
+}
+
+/* Début Responsive */
+
+@media screen and (min-width: 220px) and (max-width: 768px) {
+  main {
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    display: none;
+  }
+
+  .titre {
+    justify-content: normal;
+  }
+
+  .titre h1 {
+    margin-top: auto;
+    padding-right: 120px;
+  }
+
+  .retour a {
+    margin-left: 25px;
+  }
+
+  .texte {
+    font-size: 1em;
+    height: auto;
+  }
+
+  .texte p {
+    margin: 20px 0;
+    font-size: 2.5em;
+  }
+
+
+  .formulaire {
+    width: auto;
+    height: auto;
+    padding-bottom: 25px;
+    background-color: white;
+  }
+
+  .formulaire form {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .formulaire form .form_top_box .form_flex {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .formulaire form, .form_top_box {
+    width: auto;
+    height: auto;
+  }
+
+  .formulaire form .form_flex label {
+    margin-bottom: 5px;
+    width: 150px;
+    font-size: 1em;
+    height: 60px;
+  }
+
+  .formulaire form .form_flex input {
+    width: 300px;
+    font-size: 1em;
+  }
+
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+  }
+
+  .formulaire form .bouton_box .bouton {
+    margin-top: 40px;
+  }
+
+  .formulaire form .bouton_box .bouton #bouton_envoie {
+    font-size: 1em;
+    width: 185px;
+    height: 50px;
+  }
+
+}
+
+/* Fin Responsive */
