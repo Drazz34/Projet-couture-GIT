@@ -9,27 +9,46 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header id="haut">
-        <div></div>
-        <img src="../images/logo.png" alt="Logo de l'association" class="logo_asso">
+<body id="ancre_retour">
 
-        <nav>
-            <ul>
-                <li><a href="" class="lien_accueil">Accueil</a></li>
-                <li><a href="">Planning</a></li>
-                <li><a href="">Réalisations</a></li>
-                <li><a href="">Tutoriels</a></li>
-                <li><a href="">À propos</a></li>
-            </ul>
-        </nav>
+    <!-- début HEADER -->
 
-        <div class="btn_profil">
-            <button>Se déconnecter</button>
-            <img src="../images/workspace.png" alt="profil" class="img_workspace">
-        </div>
-    </header>
-    <!-- début header -->
+  <header>
+
+    <label for="hidden">
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+
+    </label>
+
+    <nav>
+
+      <input type="checkbox" name="hidden" id="hidden">
+
+      <img src="../images/logo.png" alt="Logo de l'association" class="logo_asso">
+
+      <ul>
+        <li><a href="../index.html" class="lien_accueil">Accueil</a></li>
+        <li><a href="../Page planning/planning.html">Planning</a></li>
+        <li><a href="../page_realisations/realisations.html">Réalisations</a></li>
+        <li><a href="../Nos_tutos/Nos_tutos.html">Tutoriels</a></li>
+        <li><a href="../a_propos/propos.html">À propos</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="btn_profil">
+      <button>Se déconnecter</button>
+      <img src="../images/workspace.png" alt="profil" class="img_workspace">
+    </div>
+
+  </header>
+
+  <!-- fin HEADER -->
+
 
     <main>
         <div id="back">
