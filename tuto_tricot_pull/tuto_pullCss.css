@@ -50,7 +50,8 @@ header {
 }
 
 header nav {
-    width: 700px;
+    width: 70%;
+    height: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -173,18 +174,26 @@ header button {
     position: relative;
 }
 
+
+.box_img{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 15px ;
+  }
+
 .toto {
     background-color: #A67AA9;
-    height: 68px;
-    width: 150px;
+    height: 60px;
+    width: 249px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -111px;
+    top: -55px;
     border-radius: 23px;
     color: aliceblue;
     position: absolute;
-    margin-top: -444px;
+    right: -25px;
 }
 
 
@@ -194,7 +203,6 @@ header button {
     padding: 5%;
     font-size: 35px;
     display: block;
-    width: 1000px;
     height: 796px;
     /* background-color: #b3000c; */
     margin-top: 75px;
@@ -462,7 +470,7 @@ header button {
     }
   }
   
-  @media screen and (min-width: 220px) and (max-width: 768px) {
+  @media screen  and (max-width: 768px) {
   
     /* début nav bar */
   
@@ -530,4 +538,180 @@ header button {
   
     /* fin nav bar */
 
+
+    #megamastok {
+        display: flex;
+        background-color: #e9dcea;
+        color: #23680c;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #mastok_1 {
+    /* padding: 5%; */
+    font-size: 35px;
+    display: block;
+    /* width: 1000px; */
+    height: 796px;
+    /* background-color: #b3000c; */
+    margin-top: 75px;
+    }
+
+    #liste_t {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A67AA9;
+        height: 80px;
+        /* width: 200px; */
+        color: white;
+    }
+
+    #mastok_2{
+        margin-top: 416px;
+        padding: 5%;
+        font-size: 35px;
+        display: block;
+        width: 380px;
+        height: 996px;
+        background-color: #D7BFDF;
+        margin-bottom: 55px;
+        margin-inline: auto;
+    }
+
+
+    .img_acce {
+        width: 200px;
+        height: 149px;
+        margin: 25px;
+    }
+
+    #etape {
+        display: flex;
+        height: 76px;
+        width: 622px;
+        margin-top: 40px;
+        justify-content: space-evenly;
+        padding-left: 30px;
+        flex-wrap: wrap;
+    }
+
+
+    .etape2 {
+        height: 131px;
+        width: 230px;
+        background-color: #A67AA9;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        align-items: center;
+        margin: 32px;
+    }
+
+    #boite_accessoire {
+        /* flex-direction: column; */
+        padding: 25px;
+    }
+    
+
+    #coteA {
+        display: flex;
+        /* justify-content: space-evenly; */
+        margin-bottom: 35px;
+    }
+
+    .img_acce2 {
+        width: 100%;
+        /* height: auto; */
+        margin-top: -32px;
+    }
+
+
+    .box_img {
+        position: relative;
+        /* display: flex; */
+        /* justify-content: flex-end; */
+        margin: 0 15px;
+    }
+
+    #liste {
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+    
+    }
+
+    #liste_t {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A67AA9;
+        height: 80px;
+        color: white;
+    }
+
+    #corps_l {
+        height: 318px;
+        background-color: #D7BFDF;
+        padding: 30px;
+        color: #23680c;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #etape {
+        display: flex;
+        height: 77px;
+        margin-top: 40px;
+        justify-content: space-evenly;
+        padding-left: 30px;
+    }
+
+    /* debut footer  */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: -20px;
+  }
+
+  .photo_fond {
+    background-image: url(../images/banniere_footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40%;
+    display: none;
 }
+
+.foot {
+    max-width: 1440px;
+    height: auto;
+    border: solid black 2px;
+    padding-bottom: 30px;
+}
+
+  /* Fin responsive Footer */
+
+}
+
