@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,28 @@
     <link rel="stylesheet" href="style_paques.css">
     <title>Pâques 2022</title>
 </head>
+
 <body id="ancre_retour">
 
      <!-- début HEADER -->
 
      <header>
 
-        <img src="../../images/logo.png" alt="Logo de l'association" class="logo_asso">
+        <label for="hidden">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+      
+          </label>
 
         <nav>
+
+            <input type="checkbox" name="hidden" id="hidden">
+
+            <img src="../../images/logo.png" alt="Logo de l'association" class="logo_asso">
+
             <ul>
                 <li><a href="../../index.html" class="lien_accueil">Accueil</a></li>
                 <li><a href="../planning.html">Planning</a></li>
