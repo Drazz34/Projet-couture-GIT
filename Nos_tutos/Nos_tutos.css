@@ -17,9 +17,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: var(--typo);
   max-width: 1440px;
@@ -28,8 +30,8 @@ body {
 
 body li:hover {
   transform: scale(1.3);
-  background-color: var(--couleur-principale);
   border-radius: 5px;
+  background-color: rgba(215, 191, 223, 0.4);
 }
 
 header {
@@ -47,14 +49,12 @@ header {
 }
 
 header nav {
-  width: 700px;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
 header nav ul {
-  width: 100%;
   display: flex;
   text-decoration: none;
   align-items: baseline;
@@ -64,7 +64,8 @@ header nav ul {
 header nav ul li {
   list-style-type: none;
   margin: 0 10px;
-  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.2s;
+  padding: 10px;
 }
 
 header nav ul li a {
@@ -140,31 +141,56 @@ header button {
 #tricot_text {
   height: 480px;
   width: 480px;
+  display: flex;
   padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
 }
 
 #couture_text {
   height: 480px;
   width: 480px;
+  display: flex;
   padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
 }
 
 #crochet_text {
   height: 480px;
   width: 480px;
+  display: flex;
   padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
 }
 
 #costume_text {
   height: 480px;
   width: 480px;
+  display: flex;
   padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
 }
 
 #accessoires_text {
   height: 480px;
   width: 480px;
+  display: flex;
   padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
 }
 
 .bout {
@@ -307,4 +333,306 @@ header button {
 
 #haut {
   scroll-behavior: smooth;
+}
+
+
+@media screen and (min-width: 220px) and (max-width: 768px) {
+
+  /* début nav bar */
+
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header nav ul,
+  header .btn_profil button {
+    display: none;
+  }
+
+  header nav ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: var(--couleur-principale-fonce);
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 22px;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-weight: normal;
+  }
+
+  header nav ul li a.lien_accueil {
+    font-weight: normal;
+  }
+
+  header nav ul li {
+    padding: 8px 0;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+    transition: none;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  header .logo_asso {
+    border-radius: 50%;
+  }
+
+  header svg,
+  header label {
+    display: block;
+  }
+
+  input:checked~ul {
+    /* display: flex; */
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    height: 225px;
+    display: block;
+  }
+
+  /* fin nav bar */
+
+  .banniere_accueil {
+    display: none;
+  }
+
+  .img_bobine {
+    display: none;
+  }
+
+  .bienvenue_texte {
+    width: 100%;
+    height: auto;
+  }
+
+  .bienvenue_texte h1 {
+    margin-top: 25px;
+  }
+
+  .membres_fondateurs {
+    display: grid;
+    height: auto;
+  }
+
+  .membres_fondateurs_presentation {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .vertical_line {
+    transform: rotate(90deg);
+    height: 135px;
+  }
+
+  .txt_sophie {
+    margin: 20px 0;
+  }
+
+  .txt_john p {
+    margin-bottom: 20px;
+  }
+
+  .txt_sophie h3,
+  .txt_john h3 {
+    margin-bottom: 25px;
+  }
+
+  .rea_evenement {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rea_evenement .rea_semaine,
+  .rea_evenement .evenement_prochain {
+    height: auto;
+    width: 365px;
+    margin: 20px 0;
+  }
+
+  .rea_evenement .rea_semaine .img_rea_semaine {
+    width: 330px;
+  }
+
+  .rea_evenement .rea_semaine .insta_jf {
+    margin: 20px 0;
+  }
+
+  .rea_evenement .evenement_prochain button {
+    width: 290px;
+    height: 100px;
+    font-size: 1em;
+  }
+
+  .rea_evenement .evenement_prochain img {
+    width: 300px;
+  }
+
+  /*debut respensive de NOS tutos*/
+
+  #mesure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_toto {
+    margin: 0;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    padding-top: 1;
+    padding-bottom: 135px;
+  }
+
+  #costume_text{
+    height: 506px;
+    width: 489px;
+    display: flex;
+    padding-top: 27px; 
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #accessoires_text{
+    height: 506px;
+    width: 489px;
+    display: flex;
+    padding-top: 27px; 
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  #crochet_text{
+    height: 506px;
+    width: 489px;
+    display: flex;
+    padding-top: 27px; 
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #tricot_text{
+    height: 506px;
+    width: 489px;
+    display: flex;
+    padding-top: 27px; 
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #couture_text{
+    height: 506px;
+    width: 489px;
+    display: flex;
+    padding-top: 27px; 
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flecheT{
+    left: 50px;
+  }
+
+  .bout{
+    border-radius: 35px;
+    background-color: #e9dcea;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    height: 76px;
+    justify-content: center;
+    width: 289px;
+    margin-left: -70px;
+    color: #23680c;
+    font-size: 30px;
+  }
+
+  .textes{
+    height: 180px;
+    width: 502px;
+    background-color: #e9dcea;
+    border-radius: 21px;
+    text-align: center;
+    margin-top: 58px;
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: -70px;
+    color: #23680c;
+  }
+
+  .nos{
+    
+  }
+
+  /* Début responsive Footer */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: -20px;
+  }
+
+  /* Fin responsive Footer */
+
 }
