@@ -17,14 +17,17 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: var(--typo);
   max-width: 1440px;
   margin: 0 auto;
 }
+
 body li:hover {
   transform: scale(1.3);
   background-color: rgba(215, 191, 223, 0.4);
@@ -47,8 +50,10 @@ header {
 
 header nav {
   height: 100%;
+  width: 70%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 header nav ul {
@@ -121,16 +126,16 @@ header button {
   border-radius: 15px;
 }
 
-.nes{
-    padding: 22px;
-    background-color: #A67AA9;
-    color: white;
-    margin-top: 69px;
-    text-align: center;
-    width: 167px;
-    height: 80px;
-    border-radius: 26px;
-    font-size: 33px;
+.nes {
+  padding: 22px;
+  background-color: #A67AA9;
+  color: white;
+  margin-top: 69px;
+  text-align: center;
+  width: 167px;
+  height: 80px;
+  border-radius: 26px;
+  font-size: 33px;
 }
 
 /* corps de liste_tutos */
@@ -143,59 +148,95 @@ header button {
   flex-direction: column;
 }
 
+#corps1 {
+  background-color: #e9dcea;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  flex-direction: column;
+}
+
+
+#corps2 {
+  background-color: #e9dcea;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.ptext{
+  height: 57px;
+  width: 137px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a16214;
+  position: absolute;
+  bottom: -70px;
+  right: 70px;
+  font-size: 30px;
+}
 /* ceci est la parti accessoire*/
 
-#video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.vectoor{
-    height: 40px;
-   margin-right: 15px;
+.vectoor {
+  height: 40px;
+  margin-right: 15px;
 }
 
-.toto{
-    background-color: #A67AA9;
-    height: 60px;
-    width: 143px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 180px;
-    border-radius: 23px;
-    color: aliceblue;
-    position: absolute;
-
+.toto {
+  background-color: #A67AA9;
+  height: 60px;
+  width: 143px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  border-radius: 23px;
+  color: aliceblue;
+  position: absolute;
+right: -25px;
 }
 
-.toto:nth-child(1){
-    left: 215px;
+.box_img{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 15px ;
 }
 
-.toto:nth-child(3){
-    left: 875px;
+.toto:nth-child(1) {
+  position: relative;
 }
 
-#acce{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.toto:nth-child(3) {
+  position: relative;
 }
 
-#accessoire1{
-    background-color: #A67AA9;
-    color: white;
-    width: 183px;
-    height: 80px;
-    border-radius: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#acce {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#accessoire1 {
+  background-color: #A67AA9;
+  color: white;
+  width: 183px;
+  height: 80px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #boite_accessoire {
@@ -203,6 +244,7 @@ header button {
   justify-content: space-evenly;
   padding: 10px;
   align-items: center;
+  margin-bottom: 51px;
 }
 
 .img_acce {
@@ -222,6 +264,10 @@ header button {
   width: 150px;
   height: 150px;
   transform: rotate(90deg);
+}
+
+.lien{
+  color: #fff;
 }
 
 /* ceci est le footer */
@@ -345,19 +391,22 @@ svg {
   height: 28px;
 }
 
-input, label {
+input,
+label {
   display: none;
 }
 
 /* Début du Responsive */
 
 @media screen and (min-width: 769px) and (max-width: 1085px) {
-  header nav, header .btn_profil button {
+
+  header nav,
+  header .btn_profil button {
     font-size: 0.6em;
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* début nav bar */
 
@@ -367,7 +416,8 @@ input, label {
     position: relative;
   }
 
-  header nav ul, header .btn_profil button {
+  header nav ul,
+  header .btn_profil button {
     display: none;
   }
 
@@ -409,18 +459,164 @@ input, label {
   }
 
   header .logo_asso {
-    border-radius: 50%; 
+    border-radius: 50%;
   }
 
-  header svg, header label {
+  header svg,
+  header label {
     display: block;
   }
 
-  input:checked ~ ul {
+  input:checked~ul {
     flex-direction: column;
     transition: all 0.3s ease-in;
     height: 225px;
     display: block;
   }
-}
+
   /* fin nav bar */
+
+
+  
+  /* debut du corps du site */
+
+
+  #acce {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 15px;
+    /* margin-top: -1px; */
+}
+
+
+
+
+  #boite_accessoire {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .fleche {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+    display: none;
+  }
+
+  .fleche1 {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+    display: none;
+  }
+
+  .img_acce {
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 117px;
+}
+
+  .toto {
+    background-color: #A67AA9;
+    height: 60px;
+    width: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13px;
+    border-radius: 23px;
+    color: aliceblue;
+    position: absolute;
+    right: 70px;
+}
+  
+.nos {
+  color: #23680c;
+  background-color: #e9dcea;
+  padding: 14px;
+  text-align: center;
+  font-size: 46px;
+  width: 518px;
+  margin-top: -26px;
+  border-radius: 15px;
+}
+
+
+.nes {
+  padding: 12px;
+  background-color: #A67AA9;
+  color: white;
+  margin-top: 33px;
+  text-align: center;
+  width: 167px;
+  height: 59px;
+  border-radius: 26px;
+  font-size: 33px;
+}
+  #corps {
+    background-color: #e9dcea;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    display: none;
+  }
+
+  #corps2 {
+    background-color: #e9dcea;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    display: none;
+  }
+
+  .ptext{
+    height: 57px;
+    width: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a16214;
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    font-size: 30px;
+  }
+ 
+  /* debut footer  */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: -20px;
+  }
+
+  /* Fin responsive Footer */
+
+}
