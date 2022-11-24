@@ -179,3 +179,92 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #bouton_envoie:hover {
   box-shadow: 0 5px 50px white inset, 0 5px 50px 0 white;
 }
+
+/* Début Responsive */
+
+@media screen and (min-width: 220px) and (max-width: 768px) {
+  main {
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    display: none;
+  }
+
+  .titre {
+    justify-content: normal;
+  }
+
+  .titre h1 {
+    margin-top: auto;
+    padding-right: 120px;
+  }
+
+  .retour a {
+    margin-left: 25px;
+  }
+
+  .texte {
+    font-size: 1em;
+    height: auto;
+  }
+
+  .texte p {
+    margin: 20px 0;
+    font-size: 2.5em;
+  }
+
+
+  .formulaire {
+    width: auto;
+    height: auto;
+    padding-bottom: 25px;
+    background-color: white;
+  }
+
+  .formulaire form {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .formulaire form .form_top_box .form_flex {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .formulaire form, .form_top_box {
+    width: auto;
+    height: auto;
+  }
+
+  .formulaire form .form_flex label {
+    margin-bottom: 5px;
+    width: 150px;
+    font-size: 1em;
+    height: 60px;
+  }
+
+  .formulaire form .form_flex input {
+    width: 300px;
+    font-size: 1em;
+  }
+
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+  }
+
+  .formulaire form .bouton_box .bouton {
+    margin-top: 40px;
+  }
+
+  .formulaire form .bouton_box .bouton #bouton_envoie {
+    font-size: 1em;
+    width: 185px;
+    height: 50px;
+  }
+
+}
+
+/* Fin Responsive */
