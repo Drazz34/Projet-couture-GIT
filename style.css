@@ -53,6 +53,7 @@ header nav {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 header nav ul {
@@ -396,6 +397,7 @@ svg {
   color: #000;
   width: 24px;
   height: 28px;
+  cursor: pointer;
 }
 
 input, label {
@@ -431,7 +433,7 @@ input, label {
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* début nav bar */
 
@@ -547,12 +549,16 @@ input, label {
   .rea_evenement {
     flex-direction: column;
     height: auto;
+    background: url(images/fond_rea.png) rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
   }
 
   .rea_evenement .rea_semaine, .rea_evenement .evenement_prochain {
     height: auto;
     width: 365px;
     margin: 20px 0;
+    background-color: transparent;
+    color: #fff;
   }
 
   .rea_evenement .rea_semaine .img_rea_semaine {

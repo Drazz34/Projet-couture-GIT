@@ -54,6 +54,7 @@ header nav {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 header nav ul {
@@ -326,6 +327,7 @@ svg {
   color: #000;
   width: 24px;
   height: 28px;
+  cursor: pointer;
 }
 
 input, label {
@@ -340,7 +342,7 @@ input, label {
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* début nav bar */
 
@@ -407,7 +409,80 @@ input, label {
   }
 
   /* fin nav bar */
+
+  .titre_page {
+    font-size: 1.5em;
+    height: 75px;
+  }
+
+  .banniere {
+    height: auto;
+  }
+
+  .banniere_image {
+    height: 250px;
+    background-position: left;
+  }
+
+  .banniere_titre {
+    font-size: 1.5em;
+    height: 70px;
+  }
+
+  section {
+    width: auto;
+    height: auto;
+  }
+
+  section .titre_realisation {
+    height: 75px;
+  }
+
+  section .titre_realisation h3 {
+    font-size: 1.2em;
+  }
+
+  section .real_box1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  section .real_box1 .real_josephine, section .real_box1 .real_gustave {
+    width: auto;
+  }
   
+  section .real_box1 img {
+    width: 340px;
+    padding: 10px 0;
+  }
+
+  section .real_box2 {
+    height: auto;
+  }
+
+  section .real_box2 .real_micheline, section .real_box2 .real_yassine {
+    height: auto;
+  }
+
+  section .real_box2 .real_micheline img {
+    height: 260px;
+    padding: 10px 0;
+  }
+
+  section .real_box2 .real_yassine img {
+    height: 185px;
+    padding: 10px 0;
+  }
+
+  section .real_box1 .real_josephine p, section .real_box1 .real_gustave p,
+  section .real_box2 .real_micheline p, section .real_box2 .real_yassine p {
+    font-size: 1.2em;
+  }
+
+  section .real_box2 .real_yassine p {
+    padding-bottom: 10px;
+  }
+
   /* Début responsive Footer */
 
   .details_reseaux {

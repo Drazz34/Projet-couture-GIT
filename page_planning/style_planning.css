@@ -54,6 +54,7 @@ header nav {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 header nav ul {
@@ -390,6 +391,7 @@ svg {
   color: #000;
   width: 24px;
   height: 28px;
+  cursor: pointer;
 }
 
 input, label {
@@ -404,7 +406,7 @@ input, label {
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* début nav bar */
 
