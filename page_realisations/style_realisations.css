@@ -143,14 +143,17 @@ main {
 
 .carte_sophie {
   height: 457px;
-  width: 655px;
+  width: 45%;
+  background-size: contain;
+
   background-image: url(image/photo_sophie.png);
   background-repeat: no-repeat;
 }
 
 .carte_john {
   height: 457px;
-  width: 655px;
+  width: 45%;
+  background-size: contain;
   background-image: url(image/photo_john.png);
   background-repeat: no-repeat;
 }
@@ -371,7 +374,6 @@ h3 {
 
 .parents {
   padding: 20px;
-  margin-left: 90px;
   font-size: 1.4em;
   font-family: "Josefin Sans", sans-serif;
   color: #23680c;
@@ -397,7 +399,7 @@ h3 {
 .line_hor {
   border-bottom: 2px solid #000;
   display: inline-block;
-  width: 1133px;
+  width: 90%;
   margin: 0 100px;
 }
 
@@ -431,7 +433,20 @@ h3 {
   cursor: pointer;
 }
 
-@media screen and (min-width: 220px) and (max-width: 768px) {
+svg {
+  display: none;
+  color: #000;
+  width: 24px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.hidden,
+#hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
   .cartes_fondateurs {
     display: block;
     margin-bottom: 15px;
@@ -453,8 +468,21 @@ h3 {
   .categories_titre {
     width: 100%;
   }
+}
 
-  /* footer */
+/* footer */
+@media screen and (max-width: 1040px) {
+  /* footer responsive */
+
+  .photo_fond {
+    display: none;
+  }
+  .foot {
+    height: auto;
+  }
+  .photo_fond {
+    display: none;
+  }
   .details_reseaux {
     width: auto;
   }
@@ -467,11 +495,82 @@ h3 {
     flex-direction: column;
   }
 
-  .bouton {
+  .line_hor {
     display: none;
   }
 
-  .line_hor {
+  .droits {
+    margin-top: 30px;
+  }
+
+  /* Fin responsive Footer */
+}
+
+/* responsive navbar */
+@media screen and (max-width: 880px) {
+  /* début nav bar */
+
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header nav ul,
+  header .btn_profil button {
     display: none;
+  }
+
+  header nav ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: var(--couleur-principale-fonce);
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 22px;
+    z-index: 10;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-weight: normal;
+  }
+
+  header nav ul li a.lien_accueil {
+    font-weight: normal;
+  }
+
+  header nav ul li {
+    padding: 8px 0;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+    transition: none;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  header .logo_asso {
+    border-radius: 50%;
+  }
+
+  .hidden,
+  svg {
+    display: block;
+  }
+
+  input:checked ~ ul {
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    height: 225px;
+    display: block;
   }
 }

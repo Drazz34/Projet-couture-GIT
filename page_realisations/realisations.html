@@ -1,230 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style_realisations.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style_realisations.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nos réalisations</title>
-</head>
+  </head>
 
-<body id="ancre_retour">
-    <header>
+  <body id="ancre_retour">
+    <header id="haut">
+      <label class="hidden" for="hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </label>
 
-        <img src="../images/logo.png" alt="Logo de l'association" class="logo_asso">
+      <nav>
+        <input type="checkbox" name="hidden" id="hidden" />
 
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="lien_accueil">Accueil</a></li>
-                <li><a href="../Page planning/planning.html">Planning</a></li>
-                <li><a href="realisations.html">Réalisations</a></li>
-                <li><a href="../Nos_tutos/Nos_tutos.html">Tutoriels</a></li>
-                <li><a href="../a_propos/propos.html">À propos</a></li>
-            </ul>
-        </nav>
+        <img
+          src="../images/logo.png"
+          alt="Logo de l'association"
+          class="logo_asso"
+        />
 
-        <div class="btn_profil">
-            <button>Se déconnecter</button>
-            <img src="../images/workspace.png" alt="profil" class="img_workspace">
-        </div>
+        <ul>
+          <li><a href="../index.html" class="lien_accueil">Accueil</a></li>
+          <li><a href="../Page_planning/planning.html">Planning</a></li>
+          <li>
+            <a href="../page_realisations/realisations.html">Réalisations</a>
+          </li>
+          <li><a href="../Nos_tutos/Nos_tutos.html">Tutoriels</a></li>
+          <li><a href="../a_propos/propos.html">À propos</a></li>
+        </ul>
+      </nav>
 
+      <div class="btn_profil">
+        <button>Se déconnecter</button>
+        <img src="../images/workspace.png" alt="profil" class="img_workspace" />
+      </div>
     </header>
-
     <main>
-        <!-- Haut de page présentation réalisation adhérents -->
-        <section class="prem_section">
-            <div class="titre_page">
-                <h1>Première réalisation de chaque adhérent</h1>
+      <!-- Haut de page présentation réalisation adhérents -->
+      <section class="prem_section">
+        <div class="titre_page">
+          <h1>Première réalisation de chaque adhérent</h1>
+        </div>
+
+        <div class="cartes_fondateurs">
+          <div class="carte_sophie">
+            <div class="titre_sophie">
+              <p>Sophie</p>
+              <!-- image en css -->
             </div>
-
-            <div class="cartes_fondateurs">
-
-                <div class="carte_sophie">
-
-                    <div class="titre_sophie">
-                        <p>Sophie</p>
-                        <!-- image en css -->
-                    </div>
-
-                </div>
-                <div class="carte_john">
-
-                    <div class="titre_sophie">
-                        <p>John</p>
-                        <!-- image en css -->
-                    </div>
-
-                </div>
+          </div>
+          <div class="carte_john">
+            <div class="titre_sophie">
+              <p>John</p>
+              <!-- image en css -->
             </div>
-            <!-- fin haut de page  -->
-
-        </section>
-        <article class="types_article">
-            <div class="types_coutures_titre">
-                <h1>Différents types de couture :</h1>
+          </div>
+        </div>
+        <!-- fin haut de page  -->
+      </section>
+      <article class="types_article">
+        <div class="types_coutures_titre">
+          <h1>Différents types de couture :</h1>
+        </div>
+        <div class="container_categories">
+          <a href="#tricot">
+            <div class="tricot cate">
+              <h3>Tricots</h3>
+              <img src="image/tricot.png" alt="" />
             </div>
-            <a href="#tricot">
-                <div class="container_categories">
-                    <div class="tricot cate">
-                        <h3>Tricots</h3>
-                        <img src="image/tricot.png" alt="">
-                    </div>
+          </a>
+
+          <a href="#crochet">
+            <div class="crochet cate">
+              <h3>Crochets</h3>
+              <img src="image/crochet.png" alt="" />
+            </div>
+          </a>
+
+          <a href="#couture">
+            <div class="couture cate">
+              <h3>Coutures</h3>
+              <img src="image/couture.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </article>
+      <!-- section coutures -->
+      <div id="couture" class="container_couture">
+        <div class="categories_titre">
+          <h1>Catégories</h1>
+        </div>
+        <div class="block_couture">
+          <div class="coutures_titre_article">
+            <h1>Coutures</h1>
+          </div>
+          <br />
+
+          <div class="vetements_couture">
+            <a href="../one-realisation/one_rea.html">
+              <div class="pantalons">
+                <h3>Pantalons</h3>
+                <img src="image/couture/pantalon_couture.png" alt="" />
+              </div>
             </a>
-
-            <a href="#crochet">
-                <div class="crochet cate">
-                    <h3>Crochets</h3>
-                    <img src="image/crochet.png" alt="">
-                </div>
+            <a href="../one-realisation/one_rea.html">
+              <div class="veste">
+                <h3>veste</h3>
+                <img src="image/couture/veste_couture.png" alt="" />
+              </div>
             </a>
-
-            <a href="#couture">
-                <div class="couture cate">
-                    <h3>Coutures</h3>
-                    <img src="image/couture.png" alt="">
-                </div>
+            <a href="../one-realisation/one_rea.html">
+              <div class="vetements_bebe">
+                <h3>Vetements pour bébé</h3>
+                <img
+                  src="image/couture/vetements_pour_bébé_couture.png"
+                  alt=""
+                />
+              </div>
             </a>
+          </div>
+        </div>
+      </div>
+      <!-- section crochets -->
+      <div id="crochet" class="container_couture contain_crochet">
+        <div class="block_couture">
+          <div class="coutures_titre_article titre_crochet">
+            <h1>Crochets</h1>
+          </div>
+          <br />
+          <div class="vetements_couture">
+            <a href="../one-realisation/one_rea.html">
+              <div class="pantalons">
+                <h3>Pantalons</h3>
+                <img src="image/crochets/pantalon_crochets.png" alt="" />
+              </div>
+            </a>
+            <a href="../one-realisation/one_rea.html">
+              <div class="veste">
+                <h3>veste</h3>
+                <img src="image/crochets/veste_crochets.png" alt="" />
+              </div>
+            </a>
+            <a href="../one-realisation/one_rea.html">
+              <div class="vetements_bebe">
+                <h3>Vetements pour bébé</h3>
+                <img src="image/crochets/bébé_crochets.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- section tricots -->
+      <div id="tricot" class="container_couture contain_tricot">
+        <div class="block_couture">
+          <div class="coutures_titre_article">
+            <h1>Tricots</h1>
+          </div>
+          <br />
+
+          <div class="vetements_couture">
+            <a href="../one-realisation/one_rea.html">
+              <div class="pantalons">
+                <h3>Pantalons</h3>
+                <img src="image/tricots/pantalon_tricots.png" alt="" />
+              </div>
+            </a>
+            <a href="../one-realisation/one_rea.html">
+              <h3>veste</h3>
+              <div class="veste">
+                <img src="image/tricots/veste_tricots.png" alt="" />
+              </div>
+            </a>
+            <a href="../one-realisation/one_rea.html">
+              <div class="vetements_bebe">
+                <h3>Vetements pour bébé</h3>
+                <img src="image/tricots/bébé_tricots.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="foot">
+      <div class="photo_fond"></div>
+      <div class="container">
+        <div class="reseaux">
+          <div class="liens_reseaux">
+            <p class="suivre">Nous suivre :</p>
+
+            <div class="details_reseaux">
+              <a class="logo" href="">
+                <img src="../images/twitter.png" alt=""
+              /></a>
+              <a class="logo" href=""
+                ><img src="../images/facebook.png" alt=""
+              /></a>
+              <a class="logo" href="">
+                <img src="../images/insta.png" alt=""
+              /></a>
             </div>
-
-
-
-
-        </article>
-        <!-- section coutures -->
-        <div id="couture" class="container_couture">
-            <div class="categories_titre">
-                <h1>Catégories</h1>
-            </div>
-            <div class="block_couture">
-                <div class="coutures_titre_article">
-                    <h1>Coutures</h1>
-                </div><br>
-
-                <a href="../one-realisation/one_rea.html">
-                    <div class="vetements_couture">
-                        <div class="pantalons">
-                            <h3>Pantalons</h3>
-                            <img src="image/couture/pantalon_couture.png" alt="">
-                        </div>
-                </a>
-                <a href="../one-realisation/one_rea.html">
-                    <div class="veste">
-                        <h3>veste</h3>
-                        <img src="image/couture/veste_couture.png" alt="">
-                    </div>
-                </a>
-                <a href="../one-realisation/one_rea.html">
-                    <div class="vetements_bebe">
-                        <h3>Vetements pour bébé</h3>
-                        <img src="image/couture/vetements_pour_bébé_couture.png" alt="">
-                    </div>
-                </a>
-            </div>
+          </div>
+          <span class="line_vert"></span>
+          <div class="parents">
+            <p class="contact_">Nous contacter :</p>
+            <a class="lien" href="">
+              <img class="logo_gmail" src="../images/gmail.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <span class="line_hor"></span>
+      <div class="parents_droit">
+        <div class="droits">
+          &copy; 2022 La Couture Pour La Vie - Tous Droits Réservées
         </div>
 
+        <div class="bouton">
+          <a href="#ancre_retour"
+            ><img
+              class="image"
+              src="../images/dashicons_arrow-up-alt2.png"
+              alt=""
+          /></a>
+          <p>Haut de page</p>
         </div>
-        <!-- section crochets -->
-        <div id="crochet" class="container_couture contain_crochet">
-
-            <div class="block_couture">
-                <div class="coutures_titre_article titre_crochet ">
-                    <h1>Crochets</h1>
-                </div><br>
-                <a href="../one-realisation/one_rea.html">
-                    <div class="vetements_couture">
-                        <div class="pantalons">
-                            <h3>Pantalons</h3>
-                            <img src="image/crochets/pantalon_crochets.png" alt="">
-                        </div>
-                </a>
-                <a href="../one-realisation/one_rea.html">
-                    <div class="veste">
-                        <h3>veste</h3>
-                        <img src="image/crochets/veste_crochets.png" alt="">
-                    </div>
-                </a>
-                <a href="../one-realisation/one_rea.html">
-                    <div class="vetements_bebe">
-                        <h3>Vetements pour bébé</h3>
-                        <img src="image/crochets/bébé_crochets.png" alt="">
-                    </div>
-                </a>
-            </div>
-        </div>
-        </div>
-        <!-- section tricots -->
-        <div id="tricot" class="container_couture contain_tricot">
-            <div class="block_couture">
-                <div class="coutures_titre_article">
-                    <h1>Tricots</h1>
-                </div><br>
-
-                <a href="../one-realisation/one_rea.html">
-                    <div class="vetements_couture">
-                        <div class="pantalons">
-                            <h3>Pantalons</h3>
-                            <img src="image/tricots/pantalon_tricots.png" alt="">
-                        </div>
-                </a>
-                <a href="../one-realisation/one_rea.html">
-                    <div class="veste">
-                        <h3>veste</h3>
-                        <img src="image/tricots/veste_tricots.png" alt="">
-                    </div>
-                </a>
-                <a href="../one-realisation/one_rea.html">
-                    <div class="vetements_bebe">
-                        <h3>Vetements pour bébé</h3>
-                        <img src="image/tricots/bébé_tricots.png" alt="">
-                    </div>
-                </a>
-                </div>
-                </div>
-                
-                </div>
-                </main>
-                
-                <!-- footer -->
-                
-                
-                <footer class="foot">
-                
-                    <div class="photo_fond">
-                    </div>
-                    <div class="container">
-                        <div class="reseaux">
-                            <div class="liens_reseaux">
-
-                    <p class="suivre">Nous suivre : </p>
-
-
-                    <div class="details_reseaux">
-                        <a class="logo" href=""> <img src="../images/twitter.png" alt=""></a>
-                        <a class="logo" href=""><img src="../images/facebook.png" alt=""></a>
-                        <a class="logo" href=""> <img src="../images/insta.png" alt=""></a>
-                    </div>
-
-                </div>
-                <span class="line_vert"></span>
-                <div class="parents">
-                    <p class="contact_">Nous contacter : </p>
-                    <a class=lien href=""> <img class="logo_gmail" src="../images/gmail.png" alt=""></a>
-                </div>
-
-            </div>
-        </div>
-        <span class="line_hor"></span>
-        <div class="parents_droit">
-            <div class="droits"> &copy; 2022 La Couture Pour La Vie - Tous Droits Réservées</div>
-
-            <div class="bouton">
-                <a href="#ancre_retour"><img class="image" src="../images/dashicons_arrow-up-alt2.png" alt=""></a>
-                <p>Haut de page</p>
-            </div>
-        </div>
-
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
